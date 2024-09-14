@@ -1,0 +1,9 @@
+﻿.idea
+Library
+Logs
+obj/Debug
+*.csproj
+*.sln
+UserSettings
+Temp
+.vscode
