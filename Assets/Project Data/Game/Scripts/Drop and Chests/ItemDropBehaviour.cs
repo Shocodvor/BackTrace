@@ -14,6 +14,8 @@ namespace Watermelon.SquadShooter
         [SerializeField] Collider triggerRef;
         [SerializeField] bool useAutoPickup = true;
 
+       
+
         private TweenCase[] throwTweenCases;
 
         public override void Initialise(DropData dropData, float availableToPickDelay = -1, float autoPickDelay = -1, bool ignoreCollector = false)
@@ -32,20 +34,9 @@ namespace Watermelon.SquadShooter
 
         public void Start()
         {
-            StartCoroutine(Box1());
+           
         }
 
-        IEnumerator Box1()
-
-        {
-
-            yield return new WaitForSeconds(10f);
-
-
-            Destroy(gameObject);
-
-
-        }
 
 
 
@@ -143,7 +134,7 @@ namespace Watermelon.SquadShooter
         public void ItemDisable()
         {
             CharacterBehaviour.OnDied -= ItemDisable;
-            gameObject.SetActive(false);
+          //  gameObject.SetActive(false);
         }
 
       

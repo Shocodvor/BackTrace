@@ -85,7 +85,7 @@ namespace Watermelon.SquadShooter
         {
             base.Initialise();
 
-            sqrSpeed = stats.MoveSpeed * stats.MoveSpeed;
+            sqrSpeed = stats.MoveSpeed * stats.MoveSpeed*5;
 
             // Reset weapon position
             weaponTransform.SetParent(weaponHolderTransform);
@@ -165,7 +165,7 @@ namespace Watermelon.SquadShooter
                 var targetRotation = Quaternion.LookRotation(target.position - transform.position);
 
                 // Smoothly rotate towards the target point.
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 50);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 100);
             }
 
             healthbarBehaviour.FollowUpdate();
@@ -243,7 +243,7 @@ namespace Watermelon.SquadShooter
 
             float distanceMultiplier = 1.0f - Mathf.InverseLerp(0, bombShakeDistance, Vector3.Distance(characterBehaviour.transform.position, bossBombBehaviour.transform.position));
             if (distanceMultiplier != 0.0f)
-                mainCameraCase.Shake(0.04f, 0.04f, Mathf.Lerp(bombShakeDurationMin, bombShakeDurationMax, distanceMultiplier), 1.4f);
+                mainCameraCase.Shake(0.04f, 0.04f, Mathf.Lerp(bombShakeDurationMin, bombShakeDurationMax, distanceMultiplier), 2.4f);
         }
 
         public override void OnAnimatorCallback(EnemyCallbackType enemyCallbackType)
@@ -313,7 +313,7 @@ namespace Watermelon.SquadShooter
             shotsAmount--;
 
             // Recalculate bomb point
-            bombPoint = target.position + new Vector3(Random.Range(-4, 4), 0, Random.Range(-4, 4));
+            bombPoint = target.position + new Vector3(Random.Range(-2, 2), 0, Random.Range(-2, 2));
 
             if (shotsAmount <= 0)
             {

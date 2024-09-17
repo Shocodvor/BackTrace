@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 7048346758939931741}
   - component: {fileID: 6293166750422988259}
   - component: {fileID: 4212937334072293355}
+  - component: {fileID: 7669822297862197589}
   m_Layer: 13
   m_Name: Item Heal
   m_TagString: Item
@@ -392,6 +393,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7669822297862197589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619653228899683269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d4010860fb7e241a8e9a489a02a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 7619653228899683269}
 --- !u!1 &8451000283577639413
 GameObject:
   m_ObjectHideFlags: 0

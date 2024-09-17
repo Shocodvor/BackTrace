@@ -29,7 +29,7 @@ namespace Watermelon.Enemy
             }
             else
             {
-                Enemy.NavMeshAgent.speed = Enemy.Stats.PatrollingSpeed;
+                Enemy.NavMeshAgent.speed = Enemy.Stats.PatrollingSpeed*2;
 
                 pointId = 0;
                 GoToPoint();
@@ -93,11 +93,11 @@ namespace Watermelon.Enemy
             isSlowed = Enemy.IsWalking;
             if (isSlowed)
             {
-                Enemy.NavMeshAgent.speed = Enemy.Stats.PatrollingSpeed;
+                Enemy.NavMeshAgent.speed = Enemy.Stats.PatrollingSpeed*2;
             }
             else
             {
-                Enemy.NavMeshAgent.speed = Enemy.Stats.MoveSpeed;
+                Enemy.NavMeshAgent.speed = Enemy.Stats.MoveSpeed*2;
             }
 
             Enemy.MoveToPoint(cachedTargetPos);

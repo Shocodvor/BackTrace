@@ -539,7 +539,7 @@ namespace Watermelon.SquadShooter
                     graphics.OnMovingStarted();
                 }
 
-                float maxAlowedSpeed = _direction.magnitude * activeMovementSettings.MoveSpeed;
+                float maxAlowedSpeed = _direction.magnitude * activeMovementSettings.MoveSpeed; //сюда вставить буст скорости
 
                 if (speed > maxAlowedSpeed)
                 {
@@ -651,7 +651,7 @@ namespace Watermelon.SquadShooter
             {
                 if (closestEnemyBehaviour == null)
                 {
-                    playerTarget.position = transform.position + transform.forward * 5;
+                    playerTarget.position = transform.position + transform.forward ;
                 }
 
                 activeMovementSettings = movementAimingSettings;

@@ -112,7 +112,7 @@ namespace Watermelon.SquadShooter
             float dmgMid = characterHealth / enemyDmgToPlayerHp;
             float damageSpreadUp = (float)damage.secondValue / (float)damage.Lerp(0.5f);
             float damageSpreadDown = (float)damage.firstValue / (float)damage.Lerp(0.5f);
-            calculatedDamage = new DuoInt((int)(dmgMid * damageSpreadDown), (int)(dmgMid * damageSpreadUp));
+            calculatedDamage = new DuoInt((int)(dmgMid * damageSpreadDown*2), (int)(dmgMid * damageSpreadUp*2));
 
             float restoredHpMid = dmgMid * restoredHpToDamage;
             float hpSpreadUp = (float)healForPlayer.secondValue / (float)healForPlayer.Lerp(0.5f);

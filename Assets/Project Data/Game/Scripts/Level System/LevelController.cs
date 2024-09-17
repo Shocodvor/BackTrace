@@ -471,23 +471,54 @@ namespace Watermelon.LevelSystem
         {
             if (ActiveRoom.AreAllEnemiesDead())
             {
-                Debug.Log("Reapawn");
 
-                ActiveRoom.ClearEnemies();
+                if (currentRoomIndex == 9)
 
-                RoomData roomData = currentLevelData.Rooms[1];
-
-
-                EnemyEntityData[] enemies = roomData.EnemyEntities;
-                for (int i = 0; i < enemies.Length; i++)
                 {
-                    ActiveRoom.SpawnEnemy(EnemyController.Database.GetEnemyData(enemies[i].EnemyType), enemies[i], false);
+                    ActiveRoom.ClearEnemies();
+                    RoomData roomData = currentLevelData.Rooms[7];
+
+                 
+
+
+                    EnemyEntityData[] enemies = roomData.EnemyEntities;
+                    for (int i = 0; i < enemies.Length; i++)
+                    {
+                        ActiveRoom.SpawnEnemy(EnemyController.Database.GetEnemyData(enemies[i].EnemyType), enemies[i], false);
+                    }
+
+                    ActiveRoom.ActivateEnemies();
+                    ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[0]);
+
                 }
 
-                ActiveRoom.ActivateEnemies();
-                ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[1]);
+                else
+                {
+
+                 
+                    Debug.Log("Respawn");
+
+                    ActiveRoom.ClearEnemies();
+
+                    currentRoomIndex = currentRoomIndex + 1;
 
 
+
+                    RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
+
+                    Debug.Log(currentRoomIndex);
+
+
+                    EnemyEntityData[] enemies = roomData.EnemyEntities;
+                    for (int i = 0; i < enemies.Length; i++)
+                    {
+                        ActiveRoom.SpawnEnemy(EnemyController.Database.GetEnemyData(enemies[i].EnemyType), enemies[i], false);
+                    }
+
+                    ActiveRoom.ActivateEnemies();
+                    ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[0]);
+
+                }
             }
         }
 
