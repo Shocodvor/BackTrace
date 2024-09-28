@@ -49,7 +49,7 @@ namespace Watermelon.LevelSystem
         // Gameplay
         private static bool manualExitActivation;
 
-        private static int lastLevelMoneyCollected;
+        public static int lastLevelMoneyCollected;
 
         private static bool isGameplayActive;
         public static bool IsGameplayActive => isGameplayActive;

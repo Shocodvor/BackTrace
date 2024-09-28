@@ -44,7 +44,7 @@ MonoBehaviour:
         - {x: 20, y: 0, z: 25}
         - {x: -50, y: 0, z: 15.5}
         - {x: -25, y: 0, z: 35.5}
-      - EnemyType: 0
+      - EnemyType: 4
         Position: {x: 50, y: 0, z: 75}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 0
@@ -582,7 +582,7 @@ MonoBehaviour:
         - {x: -108, y: 0, z: 90}
         - {x: -108, y: 0, z: 90}
         - {x: 10, y: 0, z: -6.71}
-      - EnemyType: 11
+      - EnemyType: 4
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 0
@@ -855,7 +855,7 @@ MonoBehaviour:
         - {x: -108, y: 0, z: 90}
         - {x: -108, y: 0, z: 90}
         - {x: 10, y: 0, z: -6.71}
-      - EnemyType: 11
+      - EnemyType: 4
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 1
@@ -863,7 +863,7 @@ MonoBehaviour:
         - {x: 108, y: 0, z: 90}
         - {x: 108, y: 0, z: 90}
         - {x: 20, y: 0, z: -6.71}
-      - EnemyType: 4
+      - EnemyType: 12
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 1
@@ -1123,7 +1123,7 @@ MonoBehaviour:
       - EnemyType: 4
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 0
+        IsElite: 1
         PathPoints:
         - {x: -108, y: 0, z: 90}
         - {x: -108, y: 0, z: 90}
@@ -1131,7 +1131,7 @@ MonoBehaviour:
       - EnemyType: 12
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 0
+        IsElite: 1
         PathPoints:
         - {x: 108, y: 0, z: 90}
         - {x: 108, y: 0, z: 90}
@@ -1139,7 +1139,7 @@ MonoBehaviour:
       - EnemyType: 10
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 0
+        IsElite: 1
         PathPoints:
         - {x: 0, y: 0, z: 90}
         - {x: 0, y: 0, z: 90}
@@ -1393,7 +1393,7 @@ MonoBehaviour:
     - spawnPoint: {x: 0, y: 0, z: -75}
       exitPoint: {x: 0, y: 0, z: 300}
       enemyEntities:
-      - EnemyType: 11
+      - EnemyType: 12
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 1
@@ -1404,7 +1404,7 @@ MonoBehaviour:
       - EnemyType: 1
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 0
+        IsElite: 1
         PathPoints:
         - {x: 108, y: 0, z: 90}
         - {x: 108, y: 0, z: 90}
@@ -1412,7 +1412,7 @@ MonoBehaviour:
       - EnemyType: 3
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 0
+        IsElite: 1
         PathPoints:
         - {x: 0, y: 0, z: 90}
         - {x: 0, y: 0, z: 90}
@@ -1942,11 +1942,19 @@ MonoBehaviour:
       - EnemyType: 12
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 0
+        IsElite: 1
         PathPoints:
         - {x: -108, y: 0, z: 90}
         - {x: -108, y: 0, z: 90}
         - {x: 10, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 130}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 1
+        PathPoints:
+        - {x: -108, y: 0, z: 90}
+        - {x: -108, y: 0, z: 90}
+        - {x: 0, y: 0, z: 10}
       - EnemyType: 100
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
@@ -2252,6 +2260,14 @@ MonoBehaviour:
         - {x: 108, y: 0, z: 90}
         - {x: 108, y: 0, z: 90}
         - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 130}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 1
+        PathPoints:
+        - {x: -108, y: 0, z: 90}
+        - {x: -108, y: 0, z: 90}
+        - {x: 0, y: 0, z: 15}
       - EnemyType: 4
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
@@ -15335,7 +15351,7 @@ MonoBehaviour:
     requiredUpg: 8
     enemiesLevel: 2
     hasCharacterSuggestion: 0
-    healSpawnPercent: 0.01
+    healSpawnPercent: 0.05
     dropData:
     - dropType: 0
       currencyType: 0

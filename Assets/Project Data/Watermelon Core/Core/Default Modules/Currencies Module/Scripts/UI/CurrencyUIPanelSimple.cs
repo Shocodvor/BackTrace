@@ -1,6 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Watermelon.LevelSystem;
 
 namespace Watermelon
 {
@@ -35,12 +36,18 @@ namespace Watermelon
 
         public void Redraw()
         {
-            text.text = useFormattedAmount ? currency.AmountFormatted : currency.Amount.ToString();
+            text.text = LevelController.lastLevelMoneyCollected.ToString();
+
+           
         }
 
         public void SetAmount(int amount, bool format = true)
         {
-            text.text = format ? CurrenciesHelper.Format(amount) : amount.ToString();
+            text.text = LevelController.lastLevelMoneyCollected.ToString();
+
+          
+
+
         }
 
         public void Activate()
@@ -48,6 +55,8 @@ namespace Watermelon
             if(updateOnChange)
             {
                 currency.OnCurrencyChanged += OnCurrencyAmountChanged;
+
+               
             }
         }
 
@@ -61,7 +70,11 @@ namespace Watermelon
 
         private void OnCurrencyAmountChanged(Currency currency, int amountDifference)
         {
+
+        
             text.text = useFormattedAmount ? currency.AmountFormatted : currency.Amount.ToString();
+
+         
         }
     }
 }

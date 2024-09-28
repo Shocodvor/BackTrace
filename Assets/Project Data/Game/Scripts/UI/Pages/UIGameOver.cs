@@ -19,11 +19,17 @@ namespace Watermelon
         [Space] 
         [SerializeField] TMP_Text tapToContinueText;
 
+
+        public CoinsView _coins;
+
+
+
         public override void Initialise()
         {
             reviveButton.onClick.AddListener(Revive);
             continueButton.onClick.AddListener(Replay);
 
+          
         }
 
         #region Show/Hide
@@ -46,6 +52,16 @@ namespace Watermelon
 
             tapToContinueText.alpha = 0;
             tapToContinueText.DOFade(1, 0.5f, 3).OnComplete(() => continueButton.enabled = true);
+
+            Debug.Log("Coins Reaward is" +   LevelController.lastLevelMoneyCollected);
+            // LevelController.CurrentLevelData.GetCoinsReward();
+            AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected);
+
+            _coins.CView();
+
+
+
+
         }
 
         public override void PlayHideAnimation()
@@ -56,6 +72,8 @@ namespace Watermelon
             {
                 UIController.OnPageClosed(this);
             });
+
+          
         }
         #endregion
 
@@ -65,6 +83,9 @@ namespace Watermelon
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
             LevelController.OnGameplayFinish?.Invoke();
             GameController.OnReplayLevel();
+
+
+           
         }
 
         public void Revive()
@@ -84,6 +105,8 @@ namespace Watermelon
             //         GameController.OnReplayLevel();
             //     }
             // });
+
+
         }
         #endregion
     }

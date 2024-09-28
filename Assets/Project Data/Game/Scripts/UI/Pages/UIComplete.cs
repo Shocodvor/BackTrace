@@ -144,6 +144,10 @@ namespace Watermelon
             Ads.Instance.ShowInterstitial();
             LevelController.OnGameplayFinish?.Invoke();
             GameController.OnLevelCompleteClosed();
+
+          
+
+            
         }
         #endregion
     }

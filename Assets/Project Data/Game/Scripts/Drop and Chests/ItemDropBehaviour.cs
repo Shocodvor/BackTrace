@@ -44,6 +44,8 @@ namespace Watermelon.SquadShooter
         {
             animator.enabled = true;
             triggerRef.enabled = true;
+
+            StartCoroutine(Box1());
         }
 
         public override void Throw(Vector3 position, AnimationCurve movemenHorizontalCurve, AnimationCurve movementVerticalCurve, float time)
@@ -134,11 +136,24 @@ namespace Watermelon.SquadShooter
         public void ItemDisable()
         {
             CharacterBehaviour.OnDied -= ItemDisable;
-          //  gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
 
-      
+        IEnumerator Box1()
 
-      
+        {
+
+            yield return new WaitForSeconds(7.0f);
+
+
+            Destroy(gameObject);
+
+
+
+        }
+
+
+
+
     }
 }

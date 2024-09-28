@@ -3,15 +3,59 @@
   "WorkspaceRootPath": "C:\\OhoGames\\Desperados\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\drop_points\\fillsdk\\api\\telegramapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\drop_points\\fillsdk\\api\\telegramapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\drop_points\\fillsdk\\api\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\drop_points\\fillsdk\\api\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\watermelon core\\core\\default modules\\currencies module\\scripts\\ui\\currencyuipanelsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\watermelon core\\core\\default modules\\currencies module\\scripts\\ui\\currencyuipanelsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\coinsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\coinsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\ui\\pages\\uigameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\ui\\pages\\uigameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\level system\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\level system\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\drop_points\\fillsdk\\api\\appmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\drop_points\\fillsdk\\api\\appmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\ui\\pages\\uicomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\ui\\pages\\uicomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\characters\\characterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\characters\\characterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\enemy\\state system\\commonstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\drop and chests\\itemdropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\drop and chests\\itemdropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\drop and chests\\basedropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\drop and chests\\basedropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\destroycoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\destroycoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\enemy\\state system\\commonstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\state system\\commonstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\enemy\\shotgunner\\shotgunerenemybehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\enemy\\shotgunner\\shotgunerenemybehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\shotgunner\\shotgunerenemybehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,23 +67,23 @@
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\boss\\bossbomberbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\enemy\\baseenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\enemy\\baseenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\baseenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\enemy\\enemystats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\enemy\\enemystats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\enemystats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\enemy\\rifle\\riflestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\enemy\\rifle\\riflestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\rifle\\riflestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\enemy\\rifle\\rifleenemybehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\enemy\\rifle\\rifleenemybehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\rifle\\rifleenemybehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\controllers\\balancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\controllers\\balancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\controllers\\balancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,24 +91,8 @@
       "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\level system\\activeroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\level system\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\level system\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\drop and chests\\itemdropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\drop and chests\\itemdropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46508454-51DC-1844-D94C-33C12C73A070}|Assembly-CSharp-Editor.csproj|c:\\ohogames\\desperados\\assets\\project data\\game\\scripts\\level system\\level editor\\editor\\leveleditorwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46508454-51DC-1844-D94C-33C12C73A070}|Assembly-CSharp-Editor.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\level system\\level editor\\editor\\leveleditorwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46508454-51DC-1844-D94C-33C12C73A070}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\project data\\game\\scripts\\level system\\level editor\\editor\\leveleditorwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\destroycoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\destroycoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\drop and chests\\basedropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\drop and chests\\basedropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E8B438D-4B4D-C2DB-61E5-A5D61C7F165E}|Assembly-CSharp.csproj|C:\\OhoGames\\Desperados\\assets\\project data\\game\\scripts\\characters\\enemydetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,11 +134,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoinsView.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\CoinsView.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\CoinsView.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\CoinsView.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\CoinsView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:20:19.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CurrencyUIPanelSimple.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAcwCgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T23:22:50.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIGameOver.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIGameOver.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIGameOver.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIGameOver.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIGameOver.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwDsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T23:06:37.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LevelController.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAuwJMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T05:12:39.004Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "APIManager.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "RelativeToolTip": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T06:00:42.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelegramApiController.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "RelativeToolTip": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T06:16:05.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppManager.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "RelativeToolTip": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T21:59:34.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIComplete.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIComplete.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIComplete.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIComplete.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\UI\\Pages\\UIComplete.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAqwJMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T22:46:50.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ItemDropBehaviour.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAcwJQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:19:18.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CharacterBehaviour.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "ViewState": "AQIAAO0CAAAAAAAAAAAtwP0CAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:56:08.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseDropBehaviour.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:21:11.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CommonStates.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\State System\\CommonStates.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\State System\\CommonStates.cs",
@@ -118,51 +284,11 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\State System\\CommonStates.cs",
               "ViewState": "AQIAAFYAAAAAAAAAAAApwF4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T00:22:25.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T00:22:25.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BaseEnemyBehaviour.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
-              "ViewState": "AQIAANgAAAAAAAAAAAAmwOQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T00:12:57.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyStats.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:55:22.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShotgunerEnemyBehavior.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:51:00.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "RifleStateMachine.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Rifle\\RifleStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Rifle\\RifleStateMachine.cs",
@@ -170,12 +296,47 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Rifle\\RifleStateMachine.cs",
               "ViewState": "AQIAAFYAAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:49:52.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T23:49:52.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
+              "Title": "ShotgunerEnemyBehavior.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Shotgunner\\ShotgunerEnemyBehavior.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T23:51:00.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnemyStats.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyStats.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T23:55:22.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BaseEnemyBehaviour.cs",
+              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
+              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\BaseEnemyBehaviour.cs",
+              "ViewState": "AQIAANgAAAAAAAAAAAAmwOQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T00:12:57.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "RifleEnemyBehavior.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Rifle\\RifleEnemyBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Rifle\\RifleEnemyBehavior.cs",
@@ -183,12 +344,11 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Rifle\\RifleEnemyBehavior.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:49:46.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T23:49:46.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "BalanceController.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Controllers\\BalanceController.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Controllers\\BalanceController.cs",
@@ -196,28 +356,23 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Controllers\\BalanceController.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAAewG8AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T23:44:39.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2024-09-16T23:44:39.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "DestroyCoin.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\DestroyCoin.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\DestroyCoin.cs",
               "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\DestroyCoin.cs",
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\DestroyCoin.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABsAAAAfAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAxwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T16:52:41.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "BossBomberBehaviour.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Boss\\BossBomberBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Boss\\BossBomberBehaviour.cs",
@@ -225,12 +380,11 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Boss\\BossBomberBehaviour.cs",
               "ViewState": "AQIAAFoAAAAAAAAAAAAWwFcAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T16:42:59.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T16:42:59.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "EnemyDetector.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\EnemyDetector.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\EnemyDetector.cs",
@@ -242,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "CharacterStats.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterStats.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterStats.cs",
@@ -254,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "CharactersDatabase.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharactersDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharactersDatabase.cs",
@@ -266,45 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BaseDropBehaviour.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\BaseDropBehaviour.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAUwCQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T15:21:11.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ItemDropBehaviour.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAYwIQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T15:19:18.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CharacterBehaviour.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
-              "ViewState": "AQIAAA0CAAAAAAAAAAAiwBwCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:56:08.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\EnemyController.cs",
@@ -316,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "EnemyEntityData.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\EnemyEntityData.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\EnemyEntityData.cs",
@@ -328,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "World.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\World.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\World.cs",
@@ -340,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "LevelEditorWindow.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\Level Editor\\Editor\\LevelEditorWindow.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\Level Editor\\Editor\\LevelEditorWindow.cs",
@@ -348,25 +464,11 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Level System\\Level Editor\\Editor\\LevelEditorWindow.cs",
               "ViewState": "AQIAAHoBAAAAAAAAAAAYwH8BAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T05:26:45.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T05:26:45.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LevelController.cs",
-              "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
-              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
-              "ToolTip": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
-              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
-              "ViewState": "AQIAAOEBAAAAAAAAAAAkwPABAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T05:12:39.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "ActiveRoom.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Level System\\ActiveRoom.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\ActiveRoom.cs",
@@ -374,12 +476,11 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Level System\\ActiveRoom.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAQwBUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T23:22:39.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T23:22:39.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "RangeEnemyBehaviour.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
@@ -387,12 +488,11 @@
               "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
               "ViewState": "AQIAAFAAAAAAAAAAAAAWwF8AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T23:13:46.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T23:13:46.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "RangeStateMachine.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeStateMachine.cs",
@@ -404,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "Ads.cs",
               "DocumentMoniker": "C:\\OhoGames\\Desperados\\Assets\\Project Data\\Game\\Scripts\\webgl\\Ads.cs",
               "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\webgl\\Ads.cs",

@@ -22,8 +22,8 @@ MonoBehaviour:
       attackDistance: 45
       fleeDistance: 5
       damage:
-        firstValue: 16
-        secondValue: 25
+        firstValue: 5
+        secondValue: 9
       aimDuration: 0
       moveSpeed: 17
       patrollingSpeed: 10
@@ -51,8 +51,8 @@ MonoBehaviour:
       attackDistance: 7
       fleeDistance: 0
       damage:
-        firstValue: 12
-        secondValue: 18
+        firstValue: 11
+        secondValue: 13
       aimDuration: 0
       moveSpeed: 40
       patrollingSpeed: 14
@@ -80,8 +80,8 @@ MonoBehaviour:
       attackDistance: 10
       fleeDistance: 0
       damage:
-        firstValue: 75
-        secondValue: 95
+        firstValue: 50
+        secondValue: 60
       aimDuration: 0
       moveSpeed: 35
       patrollingSpeed: 10
@@ -105,14 +105,14 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 120
-      visionRange: 80
+      visionRange: 100
       attackDistance: 100
       fleeDistance: 10
       damage:
-        firstValue: 80
-        secondValue: 110
+        firstValue: 60
+        secondValue: 80
       aimDuration: 0
-      moveSpeed: 17
+      moveSpeed: 30
       patrollingSpeed: 10
       patrollingMutliplier: 0.58
       patrollingIdleDuration: 2
@@ -138,8 +138,8 @@ MonoBehaviour:
       attackDistance: 50
       fleeDistance: 10
       damage:
-        firstValue: 5
-        secondValue: 15
+        firstValue: 4
+        secondValue: 7
       aimDuration: 0
       moveSpeed: 17
       patrollingSpeed: 10
@@ -167,8 +167,8 @@ MonoBehaviour:
       attackDistance: 0
       fleeDistance: 0
       damage:
-        firstValue: 5
-        secondValue: 14
+        firstValue: 8
+        secondValue: 16
       aimDuration: 0
       moveSpeed: 20
       patrollingSpeed: 0
@@ -193,13 +193,13 @@ MonoBehaviour:
     stats:
       hp: 240
       visionRange: 90
-      attackDistance: 40
+      attackDistance: 100
       fleeDistance: 20
       damage:
         firstValue: 15
         secondValue: 30
       aimDuration: 0
-      moveSpeed: 20
+      moveSpeed: 25
       patrollingSpeed: 10
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
@@ -225,8 +225,8 @@ MonoBehaviour:
       attackDistance: 45
       fleeDistance: 15
       damage:
-        firstValue: 8
-        secondValue: 12
+        firstValue: 6
+        secondValue: 10
       aimDuration: 0.2
       moveSpeed: 17
       patrollingSpeed: 10
@@ -254,11 +254,11 @@ MonoBehaviour:
       attackDistance: 30
       fleeDistance: 0
       damage:
-        firstValue: 5
-        secondValue: 8
+        firstValue: 6
+        secondValue: 6
       aimDuration: 0.2
-      moveSpeed: 17
-      patrollingSpeed: 10
+      moveSpeed: 10
+      patrollingSpeed: 6
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
       angularSpeed: 400
