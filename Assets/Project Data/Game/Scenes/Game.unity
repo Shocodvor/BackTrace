@@ -349,74 +349,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1001 &166585394
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542019771881093962, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847072207639682902, guid: e5ca977a18d1846498e258da5b98a884,
-        type: 3}
-      propertyPath: m_Name
-      value: TelegramApi
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e5ca977a18d1846498e258da5b98a884, type: 3}
 --- !u!1 &287329323
 GameObject:
   m_ObjectHideFlags: 1
@@ -2410,7 +2342,7 @@ PrefabInstance:
     - target: {fileID: 9068757956156514045, guid: 16ae3e6461f25be45bc05ba7fc78f9fa,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00016117314
+      value: 0.0016268442
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2560,7 +2492,7 @@ PrefabInstance:
     - target: {fileID: 3333997441335007989, guid: 2f3be087c209fef4bafe89b5d5c5dff3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -500.00055
+      value: -500.0005
       objectReference: {fileID: 0}
     - target: {fileID: 3490680625360789468, guid: 2f3be087c209fef4bafe89b5d5c5dff3,
         type: 3}
@@ -3440,7 +3372,7 @@ PrefabInstance:
     - target: {fileID: 7346584915278347249, guid: 2906f6973875c4f4d8ef1d0bda817e43,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000018119812
+      value: 0.00069482403
       objectReference: {fileID: 0}
     - target: {fileID: 8227189595013129317, guid: 2906f6973875c4f4d8ef1d0bda817e43,
         type: 3}
@@ -3695,7 +3627,7 @@ PrefabInstance:
     - target: {fileID: 7663252496052833384, guid: 7e7c7c1f163935440aaad8b026d181b5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -90.36505
+      value: -90.36499
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3884,4 +3816,3 @@ SceneRoots:
   - {fileID: 287329324}
   - {fileID: 1666190355}
   - {fileID: 1637935233}
-  - {fileID: 166585394}

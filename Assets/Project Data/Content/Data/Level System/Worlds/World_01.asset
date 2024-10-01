@@ -1947,13 +1947,13 @@ MonoBehaviour:
         - {x: -108, y: 0, z: 90}
         - {x: -108, y: 0, z: 90}
         - {x: 10, y: 0, z: -6.71}
-      - EnemyType: 12
+      - EnemyType: 4
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
-        - {x: -108, y: 0, z: 90}
-        - {x: -108, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
         - {x: 0, y: 0, z: 10}
       - EnemyType: 100
         Position: {x: 0, y: 0, z: 130}
@@ -2228,7 +2228,7 @@ MonoBehaviour:
         - {x: -108, y: 0, z: 0}
         - {x: -108, y: 0, z: 0}
         - {x: 10, y: 0, z: -6.71}
-      - EnemyType: 100
+      - EnemyType: 12
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 0
@@ -2263,7 +2263,7 @@ MonoBehaviour:
       - EnemyType: 12
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: -108, y: 0, z: 90}
         - {x: -108, y: 0, z: 90}
@@ -2549,7 +2549,7 @@ MonoBehaviour:
         - {x: 0, y: 0, z: -10}
         - {x: 0, y: 0, z: -10}
         - {x: 0, y: 0, z: -6.71}
-      - EnemyType: 100
+      - EnemyType: 11
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
         IsElite: 0
@@ -2568,7 +2568,7 @@ MonoBehaviour:
       - EnemyType: 4
         Position: {x: -108, y: 0, z: 130}
         Rotation: {x: 0.000000035363257, y: 0.5877853, z: 0.809017, w: -0.000000025692911}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: 0, y: 0, z: -10}
         - {x: 0, y: 0, z: -10}
@@ -2584,9 +2584,41 @@ MonoBehaviour:
       - EnemyType: 12
         Position: {x: 0, y: 0, z: 100}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: -108, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 10, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 20, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 30, y: 0, z: 90}
         - {x: 0, y: 0, z: 90}
         - {x: 0, y: 0, z: -6.71}
       obstacleEntities:
@@ -2849,7 +2881,7 @@ MonoBehaviour:
       - EnemyType: 1
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: 108, y: 0, z: 90}
         - {x: 108, y: 0, z: 90}
@@ -2857,7 +2889,7 @@ MonoBehaviour:
       - EnemyType: 4
         Position: {x: -108, y: 0, z: 130}
         Rotation: {x: 0.000000035363257, y: 0.5877853, z: 0.809017, w: -0.000000025692911}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: 0, y: 0, z: -10}
         - {x: 0, y: 0, z: -10}
@@ -2865,7 +2897,7 @@ MonoBehaviour:
       - EnemyType: 4
         Position: {x: -50, y: 0, z: 130}
         Rotation: {x: 0.000000035363257, y: 0.5877853, z: 0.809017, w: -0.000000025692911}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: 0, y: 0, z: -10}
         - {x: 0, y: 0, z: -10}
@@ -2873,7 +2905,7 @@ MonoBehaviour:
       - EnemyType: 4
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0.000000035363257, y: 0.5877853, z: 0.809017, w: -0.000000025692911}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: 0, y: 0, z: -10}
         - {x: 0, y: 0, z: -10}
@@ -2881,7 +2913,7 @@ MonoBehaviour:
       - EnemyType: 10
         Position: {x: 0, y: 0, z: 130}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 1
+        IsElite: 0
         PathPoints:
         - {x: 0, y: 0, z: 90}
         - {x: 0, y: 0, z: 90}
@@ -2889,7 +2921,71 @@ MonoBehaviour:
       - EnemyType: 12
         Position: {x: 0, y: 0, z: 100}
         Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-        IsElite: 1
+        IsElite: 0
+        PathPoints:
+        - {x: -108, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: -90, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: -80, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: -30, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 10, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 20, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 0, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
+        PathPoints:
+        - {x: 30, y: 0, z: 90}
+        - {x: 0, y: 0, z: 90}
+        - {x: 0, y: 0, z: -6.71}
+      - EnemyType: 12
+        Position: {x: 40, y: 0, z: 100}
+        Rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+        IsElite: 0
         PathPoints:
         - {x: -108, y: 0, z: 90}
         - {x: 0, y: 0, z: 90}

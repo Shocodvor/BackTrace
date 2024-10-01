@@ -507,6 +507,9 @@ namespace Watermelon.LevelSystem
                     RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
 
                     Debug.Log(currentRoomIndex);
+                    Debug.Log("Coins Reaward is" + LevelController.lastLevelMoneyCollected);
+                    // LevelController.CurrentLevelData.GetCoinsReward();
+                    AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected);
 
 
                     EnemyEntityData[] enemies = roomData.EnemyEntities;
