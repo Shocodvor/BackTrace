@@ -46,6 +46,8 @@ namespace Watermelon.SquadShooter
             bulletPool = new Pool(new PoolSettings(bulletObj.name, bulletObj, 5, true));
 
             RecalculateDamage();
+
+             characterBehaviour.speedWeaponChanger = 0.8f;
         }
 
         public override void OnLevelLoaded()

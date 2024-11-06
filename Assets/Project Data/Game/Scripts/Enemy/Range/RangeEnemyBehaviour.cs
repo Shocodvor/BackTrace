@@ -81,10 +81,21 @@ namespace Watermelon.SquadShooter
 
         public override void TakeDamage(float damage, Vector3 projectilePosition, Vector3 projectileDirection)
         {
+
+          //      Debug.Log ("CapsIsDrop");
+
+           //      Drop.DropItem(new DropData() { dropType = DropableItemType.Heal, amount = 1 }, transform.position, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Coin, 0.3f, -1);
+
+
             if (isDead)
                 return;
 
             base.TakeDamage(damage, projectilePosition, projectileDirection);
+
+        
+            
+
+
         }
 
         public override void OnAnimatorCallback(EnemyCallbackType enemyCallbackType)

@@ -36,6 +36,8 @@ namespace Watermelon
         private int collectedExperience;
         private List<WeaponType> collectedCards;
 
+           private static UIGame uiGame;
+
         private Pool cardsUIPool;
 
         public override void Initialise()
@@ -140,13 +142,11 @@ namespace Watermelon
         #region Buttons
         public void ContinueButton()
         {
-            AudioController.PlaySound(AudioController.Sounds.buttonSound);
-            Ads.Instance.ShowInterstitial();
-            LevelController.OnGameplayFinish?.Invoke();
-            GameController.OnLevelCompleteClosed();
-
           
+            
 
+
+         
             
         }
         #endregion

@@ -60,6 +60,7 @@ namespace Watermelon.SquadShooter
             isActive = true;
 
             UIController.OnPageOpenedEvent += OnMainMenuPageOpened;
+          
         }
 
         private void OnMainMenuPageOpened(UIPage page, System.Type pageType)

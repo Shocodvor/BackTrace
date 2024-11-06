@@ -22,6 +22,8 @@ namespace Watermelon
         [Space]
         [SerializeField] Image fadeImage;
         [SerializeField] TextMeshProUGUI coinsText;
+        [SerializeField] TextMeshProUGUI capstext;
+        [SerializeField] TextMeshProUGUI ticketField;
 
         [Space]
         [SerializeField] BlackFadeBehavior blackFade;
@@ -36,6 +38,15 @@ namespace Watermelon
         private void Awake()
         {
             roomIndicatorsPool = new PoolGeneric<UIRoomIndicator>(new PoolSettings(roomIndicatorUIPrefab.name, roomIndicatorUIPrefab, 3, true, roomsHolder));
+           
+        }
+
+        private void OnTicketUpdated(int value)
+        {
+          //  ticketField.text = value.ToString();
+
+
+          
         }
 
         public void FadeAnimation(float time, float startAlpha, float targetAlpha, Ease.Type easing, SimpleCallback callback, bool disableOnComplete = false)
@@ -54,6 +65,8 @@ namespace Watermelon
         public override void Initialise()
         {
             joystick.Initialise(UIController.MainCanvas);
+
+            AppManager.OnTicketUpdated += OnTicketUpdated;
         }
 
         public override void PlayHideAnimation()
@@ -99,6 +112,19 @@ namespace Watermelon
         public void UpdateCoinsText(int newAmount)
         {
             coinsText.text = CurrenciesHelper.Format(newAmount);
+            capstext.text = LevelController._pointsScore.ToString();
+            ticketField.text = APIManager.ticketsAmount.ToString();
+
+
+        }
+
+            public void UpdateCaps()
+        {
+            
+            capstext.text = LevelController._pointsScore.ToString();
+            ticketField.text = APIManager.ticketsAmount.ToString();
+
+
         }
     }
 }

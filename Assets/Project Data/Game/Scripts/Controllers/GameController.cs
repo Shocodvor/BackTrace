@@ -26,6 +26,7 @@ namespace Watermelon
         private BalanceController balanceController;
         private EnemyController enemyController;
         private TutorialController tutorialController;
+        private AtributeController atributeController;
 
         private void Awake()
         {
@@ -45,6 +46,7 @@ namespace Watermelon
             CacheComponent(out balanceController);
             CacheComponent(out enemyController);
             CacheComponent(out tutorialController);
+             CacheComponent(out atributeController);
         }
 
         private void Start()
@@ -63,6 +65,8 @@ namespace Watermelon
             navigationController.Initialise();
             particlesController.Initialise();
             floatingTextController.Inititalise();
+            atributeController.Initialise();
+
 
             LevelController.Initialise(settings);
 

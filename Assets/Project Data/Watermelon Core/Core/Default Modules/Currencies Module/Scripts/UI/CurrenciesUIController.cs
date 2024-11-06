@@ -76,6 +76,9 @@ namespace Watermelon
 
         public void RedrawCurrency(Currency currency, int amount)
         {
+
+              Debug.Log ("RedrawCurrency");
+
             CurrencyType type = currency.CurrencyType;
 
             if (activePanelsUI.ContainsKey(type))

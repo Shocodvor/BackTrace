@@ -51,6 +51,7 @@ namespace Watermelon.LevelSystem
             {
                 if (dropItems[i].DropItemType == dropableItemType)
                 {
+                
                     return dropItems[i];
                 }
             }
@@ -85,11 +86,15 @@ namespace Watermelon.LevelSystem
             itemGameObject.transform.eulerAngles = rotation;
             itemGameObject.SetActive(true);
 
+
+           
+
             Vector3 targetPosition = spawnPosition.GetRandomPositionAroundObject(dropAnimation.Radius * 0.9f, dropAnimation.Radius * 1.2f).AddToY(0.1f);
 
             item.Initialise(dropData, availableToPickDelay, autoPickDelay);
             item.Throw(targetPosition, dropAnimation.FallAnimationCurve, dropAnimation.FallYAnimationCurve, dropAnimation.FallTime);
 
+            
             return itemGameObject;
         }
     }

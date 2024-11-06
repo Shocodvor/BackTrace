@@ -25,5 +25,8 @@ namespace Watermelon.SquadShooter
         Medium = 2,
         Hard = 3,
         Default = 4
+
+
+        //сложность
     }
 }

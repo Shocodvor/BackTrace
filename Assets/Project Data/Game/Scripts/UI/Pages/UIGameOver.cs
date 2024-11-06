@@ -16,7 +16,7 @@ namespace Watermelon
         [SerializeField] Button reviveButton;
         [SerializeField] Button continueButton;
 
-        [Space] 
+        [Space]
         [SerializeField] TMP_Text tapToContinueText;
 
 
@@ -28,8 +28,9 @@ namespace Watermelon
         {
             reviveButton.onClick.AddListener(Revive);
             continueButton.onClick.AddListener(Replay);
-
           
+
+
         }
 
         #region Show/Hide
@@ -55,7 +56,7 @@ namespace Watermelon
 
             Debug.Log("Coins Reaward is" +   LevelController.lastLevelMoneyCollected);
             // LevelController.CurrentLevelData.GetCoinsReward();
-            AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected);
+           // AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected);
 
             _coins.CView();
 
@@ -73,11 +74,11 @@ namespace Watermelon
                 UIController.OnPageClosed(this);
             });
 
-          
+
         }
         #endregion
 
-        #region Buttons 
+        #region Buttons
         public void Replay()
         {
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
@@ -85,26 +86,30 @@ namespace Watermelon
             GameController.OnReplayLevel();
 
 
-           
+
+
+
         }
 
         public void Revive()
         {
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
-            
-            Ads.Instance.ShowReward(GameController.OnRevive);
+
+           // Ads.Instance.ShowReward(GameController.OnRevive);
             //
-            // AdsManager.ShowRewardBasedVideo((success) =>
-            // {
-            //     if (success)
-            //     {
-            //         GameController.OnRevive();
-            //     }
-            //     else
-            //     {
-            //         GameController.OnReplayLevel();
-            //     }
-            // });
+             AppManager.Instance.PayTicketAndStart((success) =>
+             {
+                 if (success && APIManager.ticketsAmount>0)
+                 {
+                     GameController.OnRevive();
+                 }
+                 else
+                 {
+                     GameController.OnReplayLevel();
+                 }
+             });
+
+
 
 
         }

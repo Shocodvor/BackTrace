@@ -13,30 +13,48 @@ MonoBehaviour:
   m_Name: Weapon Database
   m_EditorClassIdentifier: 
   weapons:
-  - name: MINIGUN
-    nameRU: "\u041C\u0418\u041D\u0418\u0413\u0410\u041D"
-    type: 0
-    upgradeType: 0
+  - name: Pistols
+    nameRU: "\u041F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u044B"
+    type: 8
+    upgradeType: 9
     rarity: 0
-    icon: {fileID: 21300000, guid: 96f48177d01e5c0419ff1e59b578c5ee, type: 3}
+    icon: {fileID: 21300000, guid: a5e9112dc45668c4db72eca4fa61526b, type: 3}
+  - name: Pulse Gun
+    nameRU: "\u0428\u0442\u0443\u0440\u043C\u043E\u0432\u0430\u044F \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0430"
+    type: 9
+    upgradeType: 10
+    rarity: 0
+    icon: {fileID: 21300000, guid: ea81d9948b976fd458e974f9de99bb64, type: 3}
   - name: SHOTGUN
-    nameRU: "\u0414\u0420\u041E\u0411\u041E\u0412\u0418\u041A"
+    nameRU: "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
     type: 3
     upgradeType: 1
     rarity: 0
     icon: {fileID: 21300000, guid: 3a51fb644e3b61f44aeefd3157e165e0, type: 3}
-  - name: LAVA GUN
-    nameRU: "\u041B\u0410\u0412\u0410 \u041F\u0423\u0428\u041A\u0410"
+  - name: Sniper Rifle
+    nameRU: "\u0421\u043D\u0430\u0439\u043F\u0435\u0440\u043A\u0430"
     type: 1
     upgradeType: 3
-    rarity: 1
-    icon: {fileID: 21300000, guid: b5f1a70cce958d14c8be56bde5c89019, type: 3}
-  - name: TESLA GUN
-    nameRU: "\u041F\u0423\u0428\u041A\u0410 \u0422\u0415\u0421\u041B\u042B"
+    rarity: 0
+    icon: {fileID: 21300000, guid: 1da470bd0000ef442803ad41bb464454, type: 3}
+  - name: MINIGUN
+    nameRU: "\u041C\u0438\u043D\u0438\u0433\u0430\u043D"
+    type: 0
+    upgradeType: 0
+    rarity: 0
+    icon: {fileID: 21300000, guid: 96f48177d01e5c0419ff1e59b578c5ee, type: 3}
+  - name: TeslaGun
+    nameRU: "\u041F\u0443\u0448\u043A\u0430 \u0422\u0435\u0441\u043B\u0430"
     type: 2
     upgradeType: 2
-    rarity: 4
+    rarity: 0
     icon: {fileID: 21300000, guid: 696461dadb27aa249a1c814e7fca4f57, type: 3}
+  - name: Flamethrower
+    nameRU: "\u041E\u0433\u043D\u0435\u043C\u0435\u0442"
+    type: 4
+    upgradeType: 4
+    rarity: 0
+    icon: {fileID: 21300000, guid: 1cff580de86ea9b4f8cf05df5bbae8b8, type: 3}
   raritySettings:
   - rarity: 0
     name: COMMON
@@ -58,8 +76,3 @@ MonoBehaviour:
     nameRU: "\u042D\u041F\u0418\u0427\u0415\u0421\u041A\u041E\u0415"
     mainColor: {r: 0.73333335, g: 0.5411765, b: 0.97647065, a: 1}
     textColor: {r: 0.41082373, g: 0.23596345, b: 0.6320754, a: 1}
-  - rarity: 4
-    name: LEGENDARY
-    nameRU: "\u041B\u0415\u0413\u0415\u041D\u0414\u0410\u0420\u041D\u041E\u0415"
-    mainColor: {r: 1, g: 0.78823537, b: 0.21568629, a: 1}
-    textColor: {r: 0.8470589, g: 0.61960787, b: 0, a: 1}

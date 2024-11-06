@@ -8,7 +8,7 @@ namespace Watermelon.SquadShooter
 {
     public class CharactersController : MonoBehaviour
     {
-        private const CharacterType DEFAULT_CHARACTER_TYPE = CharacterType.Character_01;
+        private const CharacterType DEFAULT_CHARACTER_TYPE = CharacterType.Character_02;
 
         private static CharactersController charactersController;
 

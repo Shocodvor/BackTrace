@@ -1,0 +1,417 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703b9107bbc003b45b8110a000516bf9, type: 3}
+  m_Name: Govno Gun Upgrade
+  m_EditorClassIdentifier: 
+  upgradeType: 4
+  title: GovnoGun
+  upgrades:
+  - price: 10
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 10
+      secondValue: 10
+    rangeRadius: 40
+    fireRate: 10
+    spread: 10
+    power: 10
+    bulletsPerShot:
+      firstValue: 10
+      secondValue: 10
+    bulletSpeed:
+      firstValue: 10
+      secondValue: 10
+    keyUpgradeNumber: 1
+  - price: 100
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 20
+      secondValue: 20
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 20
+      secondValue: 20
+    keyUpgradeNumber: 1
+  - price: 500
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 80
+      secondValue: 100
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 30
+      secondValue: 40
+    keyUpgradeNumber: 1
+  - price: 700
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 120
+      secondValue: 150
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 900
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 150
+      secondValue: 200
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 1100
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 220
+      secondValue: 250
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 1300
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 250
+      secondValue: 300
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 1600
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 300
+      secondValue: 350
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 1800
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 400
+      secondValue: 450
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 2000
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 450
+      secondValue: 500
+    rangeRadius: 40
+    fireRate: 20
+    spread: 20
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 2200
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 500
+      secondValue: 550
+    rangeRadius: 40
+    fireRate: 20
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 2400
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 550
+      secondValue: 600
+    rangeRadius: 40
+    fireRate: 20
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 2600
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 600
+      secondValue: 650
+    rangeRadius: 40
+    fireRate: 20
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 2600
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 600
+      secondValue: 650
+    rangeRadius: 30
+    fireRate: 20
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 2800
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 650
+      secondValue: 850
+    rangeRadius: 30
+    fireRate: 22
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 3000
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 650
+      secondValue: 850
+    rangeRadius: 30
+    fireRate: 24
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 3200
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 700
+      secondValue: 850
+    rangeRadius: 30
+    fireRate: 26
+    spread: 25
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 3400
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 700
+      secondValue: 850
+    rangeRadius: 30
+    fireRate: 28
+    spread: 28
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 3600
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 700
+      secondValue: 850
+    rangeRadius: 30
+    fireRate: 28
+    spread: 30
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1
+  - price: 3800
+    currencyType: 0
+    weaponPrefab: {fileID: 5636405541002295016, guid: 0d74e4ab4b7169d46889157411eb7a76,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: ef5f452bc7badaf4b9c9b86adda600c7,
+      type: 3}
+    damage:
+      firstValue: 700
+      secondValue: 850
+    rangeRadius: 30
+    fireRate: 30
+    spread: 30
+    power: 20
+    bulletsPerShot:
+      firstValue: 20
+      secondValue: 20
+    bulletSpeed:
+      firstValue: 40
+      secondValue: 60
+    keyUpgradeNumber: 1

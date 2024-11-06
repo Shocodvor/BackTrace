@@ -1,0 +1,254 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Games\\Unshake\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|c:\\games\\unshake\\assets\\project data\\watermelon core\\extra components\\modules\\settings panel\\scripts\\settingspanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\watermelon core\\extra components\\modules\\settings panel\\scripts\\settingspanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\game\\scripts\\characters\\characterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\characters\\characterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\drop_points\\fillsdk\\api\\appmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\drop_points\\fillsdk\\api\\appmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\watermelon core\\core\\default modules\\currencies module\\scripts\\ui\\currencyuipanelsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\watermelon core\\core\\default modules\\currencies module\\scripts\\ui\\currencyuipanelsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\drop_points\\fillsdk\\api\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\drop_points\\fillsdk\\api\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\drop_points\\fillsdk\\api\\telegramapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\drop_points\\fillsdk\\api\\telegramapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|c:\\games\\unshake\\assets\\project data\\game\\scripts\\characters\\charactertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\characters\\charactertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\game\\scripts\\level system\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\level system\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Home\\Desktop\\DropPoints\\TicketUi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\game\\scripts\\enemy\\range\\rangeenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\enemy\\range\\rangeenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\game\\scripts\\webgl\\ads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\webgl\\ads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\game\\scripts\\drop and chests\\itemdropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\drop and chests\\itemdropbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\watermelon core\\core\\default modules\\currencies module\\scripts\\currencytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\watermelon core\\core\\default modules\\currencies module\\scripts\\currencytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|C:\\Games\\Unshake\\assets\\project data\\game\\scripts\\drop and chests\\rewardedchestbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9297877-85A5-53D3-67EE-495BFF371140}|Assembly-CSharp.csproj|solutionrelative:assets\\project data\\game\\scripts\\drop and chests\\rewardedchestbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "APIManager.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "RelativeToolTip": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\APIManager.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAIwJgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T04:06:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppManager.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "RelativeToolTip": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\AppManager.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCMAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T03:59:16.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CurrencyUIPanelSimple.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\UI\\CurrencyUIPanelSimple.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAuwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T02:49:59.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterBehaviour.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterBehaviour.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAawBUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:26:42.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingsPanel.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Watermelon Core\\Extra Components\\Modules\\Settings Panel\\Scripts\\SettingsPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Watermelon Core\\Extra Components\\Modules\\Settings Panel\\Scripts\\SettingsPanel.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Watermelon Core\\Extra Components\\Modules\\Settings Panel\\Scripts\\SettingsPanel.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Watermelon Core\\Extra Components\\Modules\\Settings Panel\\Scripts\\SettingsPanel.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAI0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T23:35:52.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelegramApiController.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "RelativeToolTip": "Assets\\Project Data\\DROP_POINTS\\FillSDK\\API\\TelegramApiController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T04:08:46.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CharacterType.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterType.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterType.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterType.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Characters\\CharacterType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:12:16.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LevelController.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Level System\\LevelController.cs",
+              "ViewState": "AQIAAC4CAAAAAAAAAAAnwFsCAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T07:34:07.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RangeEnemyBehaviour.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Enemy\\Range\\RangeEnemyBehaviour.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAhwFsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:05:23.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ads.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\webgl\\Ads.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\webgl\\Ads.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\webgl\\Ads.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\webgl\\Ads.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T07:48:57.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TicketUi.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\Desktop\\DropPoints\\TicketUi.cs",
+              "RelativeDocumentMoniker": "..\\..\\Users\\Home\\Desktop\\DropPoints\\TicketUi.cs",
+              "ToolTip": "C:\\Users\\Home\\Desktop\\DropPoints\\TicketUi.cs",
+              "RelativeToolTip": "..\\..\\Users\\Home\\Desktop\\DropPoints\\TicketUi.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T01:02:33.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItemDropBehaviour.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\ItemDropBehaviour.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAmwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T07:27:33.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CurrencyType.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\CurrencyType.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\CurrencyType.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\CurrencyType.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Watermelon Core\\Core\\Default Modules\\Currencies Module\\Scripts\\CurrencyType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:32:23.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RewardedChestBehavior.cs",
+              "DocumentMoniker": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\RewardedChestBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\RewardedChestBehavior.cs",
+              "ToolTip": "C:\\Games\\Unshake\\Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\RewardedChestBehavior.cs",
+              "RelativeToolTip": "Assets\\Project Data\\Game\\Scripts\\Drop and Chests\\RewardedChestBehavior.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T01:01:49.444Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

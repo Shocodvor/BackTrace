@@ -96,7 +96,7 @@ namespace Watermelon.SquadShooter
 
         public bool IsUnlocked()
         {
-            return ExperienceController.CurrentLevel >= requiredLevel;
+            return ExperienceController.CurrentLevel >= requiredLevel;  // здесь открывается и закрывается персонаж
         }
     }
 }

@@ -300,6 +300,16 @@ namespace Watermelon.SquadShooter
 
                     teslaHolderTransform = teslaHolderObject.transform;
 
+                     GameObject BackPackobject = new GameObject("BackPackobject Holder");
+                    teslaHolderObject.transform.SetParent(tempAnimator.transform);
+                    teslaHolderObject.transform.ResetLocal();
+                    teslaHolderObject.transform.localPosition = new Vector3(1.42f, 5.22f, 2.38f);
+
+                    teslaHolderTransform = teslaHolderObject.transform;
+
+
+
+
                     // Initialise mesh renderer
                     meshRenderer = tempAnimator.transform.GetComponentInChildren<SkinnedMeshRenderer>();
 

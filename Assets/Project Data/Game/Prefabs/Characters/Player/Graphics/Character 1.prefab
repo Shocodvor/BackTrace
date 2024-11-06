@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 5642161791788754803}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.42, y: 5.22, z: 2.38}
+  m_LocalPosition: {x: -0.24, y: 10.29, z: 2.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -411,10 +411,10 @@ MonoBehaviour:
       secondValue: 1.2
   leftHandRig: {fileID: 4717564349005046768}
   rightHandRig: {fileID: 4597044279229347693}
-  minigunHolderTransform: {fileID: 6544143523937184879}
-  shootGunHolderTransform: {fileID: 7757514660986331893}
-  rocketHolderTransform: {fileID: 8210536126565926362}
-  teslaHolderTransform: {fileID: 7542486509285704926}
+  minigunHolderTransform: {fileID: 0}
+  shootGunHolderTransform: {fileID: 0}
+  rocketHolderTransform: {fileID: 0}
+  teslaHolderTransform: {fileID: 0}
   mainRig: {fileID: 2432178721322063365}
   leftHandController: {fileID: 3524533464435158221}
   rightHandController: {fileID: 2275046911731308231}

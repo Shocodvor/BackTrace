@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823147424966694468}
-  m_Mesh: {fileID: -1264635489282502414, guid: cb4ebd0dd5f80204ea5779455dca6904, type: 3}
+  m_Mesh: {fileID: 3209554841506446676, guid: 74300a7752929a44eb81d2b517808e1e, type: 3}
 --- !u!23 &1183483843081238417
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3658322aa152d704782646fab03ab41d, type: 2}
+  - {fileID: -6478536213147159724, guid: 74300a7752929a44eb81d2b517808e1e, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -351,6 +351,7 @@ MonoBehaviour:
   animator: {fileID: 4212937334072293355}
   triggerRef: {fileID: 6293166750422988259}
   useAutoPickup: 0
+  coin: {fileID: 0}
 --- !u!65 &6293166750422988259
 BoxCollider:
   m_ObjectHideFlags: 0

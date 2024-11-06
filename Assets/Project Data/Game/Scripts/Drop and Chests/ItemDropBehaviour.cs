@@ -14,6 +14,8 @@ namespace Watermelon.SquadShooter
         [SerializeField] Collider triggerRef;
         [SerializeField] bool useAutoPickup = true;
 
+        [SerializeField] public GameObject coin;
+
        
 
         private TweenCase[] throwTweenCases;
@@ -29,6 +31,8 @@ namespace Watermelon.SquadShooter
             animator.enabled = false;
 
             CharacterBehaviour.OnDied += ItemDisable;
+
+            StartCoroutine(Box1());
         }
 
 
@@ -45,7 +49,7 @@ namespace Watermelon.SquadShooter
             animator.enabled = true;
             triggerRef.enabled = true;
 
-            StartCoroutine(Box1());
+          
         }
 
         public override void Throw(Vector3 position, AnimationCurve movemenHorizontalCurve, AnimationCurve movementVerticalCurve, float time)
@@ -145,9 +149,7 @@ namespace Watermelon.SquadShooter
 
             yield return new WaitForSeconds(7.0f);
 
-
-            Destroy(gameObject);
-
+            gameObject.SetActive(false);
 
 
         }

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b0a5e3b9577a74d8fe519553c19d5d, type: 3}
+  m_Name: BaseBallUpgarde
+  m_EditorClassIdentifier: 
+  upgradeType: 6
+  title: BaseBallUpgarde
+  upgrades:
+  - price: 0
+    currencyType: 0
+    weaponPrefab: {fileID: 6347890837037930244, guid: 8c0d9857fb6599545a3d7213eca35ffb,
+      type: 3}
+    bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
+      type: 3}
+    damage:
+      firstValue: 100
+      secondValue: 100
+    rangeRadius: 5
+    fireRate: 1.6
+    spread: 60
+    power: 27
+    bulletsPerShot:
+      firstValue: 3
+      secondValue: 3
+    bulletSpeed:
+      firstValue: 120
+      secondValue: 180
+    keyUpgradeNumber: -1

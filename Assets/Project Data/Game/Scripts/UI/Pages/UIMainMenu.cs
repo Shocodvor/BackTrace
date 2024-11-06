@@ -174,6 +174,13 @@ namespace Watermelon
 
         public void PlayButton()
         {
+
+
+            UIController.ShowPage<UIWeaponPage>();
+
+
+
+
             levelProgressionPanel.Hide();
 
             bottomPanelRectTransform.DOAnchoredPosition(new Vector2(0, -500), 0.3f).SetEasing(Ease.Type.CubicOut).OnComplete(delegate

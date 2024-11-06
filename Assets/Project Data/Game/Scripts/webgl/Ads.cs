@@ -12,7 +12,7 @@ namespace webgl
         {
 
 
-            PlayerPrefs.DeleteAll();
+        
             if (Instance == null)
             {
                 Instance = this;

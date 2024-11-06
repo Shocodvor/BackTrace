@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Watermelon;
 using Watermelon.Upgrades;
+using Watermelon.LevelSystem;
 
 namespace Watermelon.SquadShooter
 {
@@ -57,6 +58,9 @@ namespace Watermelon.SquadShooter
 
         private void InitiasePanels()
         {
+
+          
+
             for (int i = 0; i < WeaponsController.Database.Weapons.Length; i++)
             {
                 WeaponPanelUI weaponPanel = weaponPanelPool.GetPooledComponent();
@@ -181,7 +185,14 @@ namespace Watermelon.SquadShooter
         {
             UIController.HidePage<UIWeaponPage>(() =>
             {
+
+                if (!LevelController.StartGame)
+                
+                
+                {
                 UIController.ShowPage<UIMainMenu>();
+
+                }
             });
 
             AudioController.PlaySound(AudioController.Sounds.buttonSound);

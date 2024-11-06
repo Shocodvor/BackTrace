@@ -16,6 +16,7 @@ namespace Watermelon
         public const string TAG_ENEMY = "Enemy";
         public const string TAG_ITEM = "Item";
         public const string TAG_CHEST = "Chest";
+        public const string TAG_Pedestal = "PedestalInGame";
         public const string TAG_GRAB_POINT = "GrabPoint";
 
         public static void Init()

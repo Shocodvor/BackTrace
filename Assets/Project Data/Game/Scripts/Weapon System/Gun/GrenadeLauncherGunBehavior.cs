@@ -27,6 +27,8 @@ namespace Watermelon.SquadShooter
         private float shootingRadius;
         private LavaLauncherUpgrade upgrade;
 
+     
+
         public override void Initialise(CharacterBehaviour characterBehaviour, WeaponData data)
         {
             base.Initialise(characterBehaviour, data);
@@ -39,6 +41,9 @@ namespace Watermelon.SquadShooter
             shootingRadius = characterBehaviour.EnemyDetector.DetectorRadius;
 
             RecalculateDamage();
+
+             characterBehaviour.speedWeaponChanger = 0.65f;
+
         }
 
         public override void OnLevelLoaded()
@@ -112,6 +117,10 @@ namespace Watermelon.SquadShooter
         {
             transform.SetParent(characterGraphics.RocketHolderTransform);
             transform.ResetLocal();
+
+           
+
+           
         }
 
         public override void SetGraphicsState(bool state)

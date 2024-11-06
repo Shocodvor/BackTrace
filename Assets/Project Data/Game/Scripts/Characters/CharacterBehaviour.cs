@@ -4,6 +4,7 @@ using Watermelon;
 using Watermelon.LevelSystem;
 using Watermelon.Upgrades;
 
+
 namespace Watermelon.SquadShooter
 {
     public class CharacterBehaviour : MonoBehaviour, IEnemyDetector, IHealth, INavMeshAgent
@@ -16,10 +17,10 @@ namespace Watermelon.SquadShooter
         [SerializeField] EnemyDetector enemyDetector;
 
         [Header("Health")]
-        [SerializeField] HealthbarBehaviour healthbarBehaviour;
+        [SerializeField] public HealthbarBehaviour healthbarBehaviour;
         public HealthbarBehaviour HealthbarBehaviour => healthbarBehaviour;
 
-        [SerializeField] ParticleSystem healingParticle;
+        [SerializeField] public ParticleSystem healingParticle;
 
         [Header("Target")]
         [SerializeField] GameObject targetRingPrefab;
@@ -50,7 +51,7 @@ namespace Watermelon.SquadShooter
         private GameObject gunPrefabGraphics;
 
         // Health
-        private float currentHealth;
+        public float currentHealth;
 
         public float CurrentHealth => currentHealth;
         public float MaxHealth => stats.Health;
@@ -95,9 +96,13 @@ namespace Watermelon.SquadShooter
         private bool isMovementActive = false;
         public bool IsMovementActive => isMovementActive;
 
+        public float speedWeaponChanger = 1;
+
         public static bool NoDamage { get; private set; } = false;
 
         public static SimpleCallback OnDied;
+
+             private static UIGame uiGame;
 
         private void Awake()
         {
@@ -539,7 +544,7 @@ namespace Watermelon.SquadShooter
                     graphics.OnMovingStarted();
                 }
 
-                float maxAlowedSpeed = _direction.magnitude * activeMovementSettings.MoveSpeed; //сюда вставить буст скорости
+                float maxAlowedSpeed = _direction.magnitude * activeMovementSettings.MoveSpeed*speedWeaponChanger; //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
                 if (speed > maxAlowedSpeed)
                 {
@@ -600,7 +605,9 @@ namespace Watermelon.SquadShooter
                     graphics.OnMovingStarted();
                 }
 
-                float maxAlowedSpeed = _direction.magnitude * activeMovementSettings.MoveSpeed;
+                float maxAlowedSpeed = _direction.magnitude * activeMovementSettings.MoveSpeed*speedWeaponChanger;
+
+              
 
                 if (speed > maxAlowedSpeed)
                 {
@@ -736,6 +743,36 @@ namespace Watermelon.SquadShooter
             {
                 other.GetComponent<AbstractChestBehavior>().ChestApproached();
             }
+
+            else if (other.CompareTag(PhysicsHelper.TAG_Pedestal))
+            {
+                 other.GetComponent<AbstractChestBehavior>().ChestApproached();
+
+                   Debug.Log("Tag PEDESTALvior");
+
+                     AudioController.PlaySound(AudioController.Sounds.buttonSound);
+        
+
+            CurrenciesController.Add(CurrencyType.Coin, LevelController.lastLevelMoneyCollected);
+            AppManager.OnGameOver.Invoke(LevelController._pointsScore);
+
+
+
+            LevelController._pointsScore = 0;
+            LevelController.lastLevelMoneyCollected = 0;
+
+                uiGame = UIController.GetPage<UIGame>();
+
+              
+                 uiGame.UpdateCaps();
+
+                   currentHealth = Mathf.Clamp(currentHealth + 2, 0, MaxHealth);
+               healthbarBehaviour.OnHealthChanged();
+                healingParticle.Play();  
+
+            }
+
+
         }
 
         private void OnTriggerExit(Collider other)
@@ -743,6 +780,8 @@ namespace Watermelon.SquadShooter
             if (other.CompareTag(PhysicsHelper.TAG_CHEST))
             {
                 other.GetComponent<AbstractChestBehavior>().ChestLeft();
+
+               
             }
         }
 
@@ -755,10 +794,14 @@ namespace Watermelon.SquadShooter
                     if (item.IsRewarded)
                     {
                         LevelController.OnRewardedCoinPicked(item.DropAmount);
+
+                      
                     }
                     else
                     {
                         LevelController.OnCoinPicked(item.DropAmount);
+
+                        
                     }
                 }
                 else
@@ -768,11 +811,20 @@ namespace Watermelon.SquadShooter
             }
             else if (item.DropType == DropableItemType.Heal)
             {
-                currentHealth = Mathf.Clamp(currentHealth + item.DropAmount, 0, MaxHealth);
-                healthbarBehaviour.OnHealthChanged();
-                healingParticle.Play();
+             //   currentHealth = Mathf.Clamp(currentHealth + item.DropAmount, 0, MaxHealth);
+            //    healthbarBehaviour.OnHealthChanged();
+              //  healingParticle.Play();       
+
+                //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+
+                LevelController._pointsScore += 10;
+
+              
             }
         }
+
+
+  
 
         [Button]
         public void Jump()

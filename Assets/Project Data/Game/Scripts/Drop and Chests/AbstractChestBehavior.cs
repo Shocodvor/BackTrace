@@ -45,11 +45,22 @@ namespace Watermelon.SquadShooter
             Vector3 dropCenter = transform.position + Vector3.forward * -3f;
 
             if (!dropData.IsNullOrEmpty())
+
             {
                 for (int i = 0; i < dropData.Count; i++)
                 {
                     if (dropData[i].dropType == DropableItemType.Currency)
                     {
+
+
+                         for (int k =0; k<10;k++){   
+                        int health = 100;
+                          Drop.DropItem(new DropData() { dropType = DropableItemType.Heal, amount = health }, transform.position, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Coin, 0.3f, -1);
+
+                         }
+
+
+
                         int itemsAmount = Mathf.Clamp(itemsAmountRange.Random(), 1, dropData[i].amount);
 
                         List<int> itemValues = LevelController.SplitIntEqually(dropData[i].amount, itemsAmount);
@@ -62,10 +73,22 @@ namespace Watermelon.SquadShooter
                                 data.amount = itemValues[j];
 
                                 Drop.DropItem(data, dropCenter, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Coin, itemValues[j], 0.5f, rewarded: isRewarded);
+
+                               
+
+                                
                             });
                         }
 
                         AudioController.PlaySound(AudioController.Sounds.chestOpen, 1f);
+
+
+
+
+
+
+
+
                     }
                     else if (dropData[i].dropType == DropableItemType.WeaponCard)
                     {
@@ -73,12 +96,16 @@ namespace Watermelon.SquadShooter
                         {
                             WeaponCardDropBehaviour card = Drop.DropItem(dropData[i], dropCenter, Vector3.zero, DropFallingStyle.Default, 1, 0.6f).GetComponent<WeaponCardDropBehaviour>();
                             card.SetCardData(dropData[i].cardType);
+
+                              Debug.Log ("WeaponCard");
                         }
                     }
                     else
                     {
                         for (int j = 0; j < dropData[i].amount; j++)
                         {
+                            
+                             Debug.Log ("dropData");
                             Drop.DropItem(dropData[i], dropCenter, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Default, 1, 0.6f);
                         }
                     }

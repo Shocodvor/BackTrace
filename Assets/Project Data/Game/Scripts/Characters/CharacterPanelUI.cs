@@ -12,8 +12,8 @@ namespace Watermelon.SquadShooter
     public class CharacterPanelUI : MonoBehaviour
     {
         private const string LOCKED_NAME = "???";
-        private const string UPGRADE_TEXT = "UPGRADE";
-        private const string UPGRADE_TEXT_RU = "УЛУЧШИТЬ";
+        private const string UPGRADE_TEXT = "To Open";
+        private const string UPGRADE_TEXT_RU = "Открыть";
         private const string EVOLVE_TEXT = "EVOLVE";
         private const string EVOLVE_TEXT_RU = "РАЗВИТ";
 
@@ -67,6 +67,10 @@ namespace Watermelon.SquadShooter
         private bool isUpgradeAnimationPlaying;
 
         private static CharacterPanelUI selectedCharacterPanelUI;
+
+           private static UIGame uiGame;
+
+         public CurrencyUIPanelSimple _currencyUIPanelSimple;
 
         public void Initialise(Character character, UICharactersPanel charactersPanel)
         {
@@ -383,6 +387,10 @@ namespace Watermelon.SquadShooter
             }
         }
 
+       
+
+
+
         public void OnSelectButtonClicked()
         {
             if (UICharactersPanel.IsControlBlocked)
@@ -397,9 +405,43 @@ namespace Watermelon.SquadShooter
             if (!character.IsUnlocked())
                 return;
 
-            CharactersController.SelectCharacter(character.Type);
+         
+            AppManager.Instance.PayTicketAndStart((success) =>
+             {
+                 if (success && APIManager.ticketsAmount>0)
+                 {
+                  
+            
+                
+            
+                     Tween.DelayedCall(0.3f, () =>
+                     {
+                      
+                             CharactersController.SelectCharacter(character.Type);
 
-            SelectCharacter();
+                             SelectCharacter();
+
+                               _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
+                               _currencyUIPanelSimple.Redraw();
+
+
+                                  uiGame = UIController.GetPage<UIGame>();
+                       
+                                  uiGame.UpdateCaps();
+
+                                
+          
+                
+
+
+
+                     });
+                 } 
+             });
+
+
+
+
         }
     }
 }

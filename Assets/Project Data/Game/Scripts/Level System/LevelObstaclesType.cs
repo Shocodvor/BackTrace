@@ -19,5 +19,6 @@
         Wall_1x1 = 12,
         Wall_1x2 = 13,
         Wall_Corner = 14,
+        Train = 15,
     }
 }

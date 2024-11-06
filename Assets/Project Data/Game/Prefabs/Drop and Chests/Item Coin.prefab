@@ -383,6 +383,7 @@ MonoBehaviour:
   animator: {fileID: 9089315905101042405}
   triggerRef: {fileID: 8431543026855989676}
   useAutoPickup: 1
+  coin: {fileID: 3196047992492047656}
 --- !u!95 &9089315905101042405
 Animator:
   serializedVersion: 5

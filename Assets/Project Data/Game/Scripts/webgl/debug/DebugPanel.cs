@@ -50,7 +50,7 @@ namespace webgl.debug
 
         private void AddButtons()
         {
-            // AddButton("Money", "+1000", () => PlayerData.g_money += 1000);
+           
             // AddButton("Gem", "+100", () => PlayerData.g_gem += 100);
             // AddButton("Wave in game", "Add", () => PlayerData.levelInGame++);
             // AddButton("Map level", "Add", () =>

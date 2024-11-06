@@ -28,7 +28,7 @@ namespace Watermelon
         {
             if (Application.isPlaying)
             {
-                CurrenciesController.Set(CurrencyType.Coin, 2000000);
+               
             }
         }
 
@@ -37,7 +37,7 @@ namespace Watermelon
         {
             if (Application.isPlaying)
             {
-                CurrenciesController.Set(CurrencyType.Coin, 0);
+              
             }
         }
 
@@ -46,7 +46,7 @@ namespace Watermelon
         //{
         //    if (Application.isPlaying)
         //    {
-        //        CurrenciesController.Set(CurrencyType.Gems, 100);
+        //      
         //    }
         //}
 
@@ -55,7 +55,7 @@ namespace Watermelon
         //{
         //    if (Application.isPlaying)
         //    {
-        //        CurrenciesController.Set(CurrencyType.Gems, 0);
+        //      
         //    }
         //}
 
@@ -64,7 +64,7 @@ namespace Watermelon
         //{
         //    if (Application.isPlaying)
         //    {
-        //        ExperienceController.GainXPPoints(10);
+        //       
         //    }
         //}
 
@@ -82,7 +82,7 @@ namespace Watermelon
         {
             if (Application.isPlaying)
             {
-                ExperienceController.SetLevelDev(1);
+               
             }
         }
 
@@ -139,13 +139,13 @@ namespace Watermelon
         [MenuItem("Actions/Prev Level (menu) [P]", priority = 71)]
         public static void PrevLevel()
         {
-            LevelController.PrevLevelDev();
+           
         }
 
         [MenuItem("Actions/Next Level (menu) [N]", priority = 72)]
         public static void NextLevel()
         {
-            LevelController.NextLevelDev();
+           
         }
 
         [MenuItem("Actions/Skip Room [R]", priority = 73)]
@@ -163,7 +163,7 @@ namespace Watermelon
         [MenuItem("Actions/Print Shorcuts", priority = 150)]
         private static void PrintShortcuts()
         {
-            Debug.Log("H - heal player \nD - toggle player damage \nN - skip level\nR - skip room\n\n");
+         
         }
 
 #endif

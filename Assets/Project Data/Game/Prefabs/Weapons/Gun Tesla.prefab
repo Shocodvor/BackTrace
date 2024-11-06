@@ -123,7 +123,7 @@ MonoBehaviour:
   targetLayers:
     serializedVersion: 2
     m_Bits: 768
-  chargeDuration: 1.5
+  chargeDuration: 0.1
   targetsHitGoal:
     firstValue: 3
     secondValue: 3
@@ -144,7 +144,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5

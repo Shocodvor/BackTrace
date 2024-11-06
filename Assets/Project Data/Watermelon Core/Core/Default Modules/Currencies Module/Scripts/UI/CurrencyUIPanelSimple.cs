@@ -16,6 +16,8 @@ namespace Watermelon
 
         [Space]
         [SerializeField] TextMeshProUGUI text;
+        [SerializeField] TextMeshProUGUI ticketstext;
+
         [SerializeField] Image icon;
 
         public string Text { get => text.text; set => text.text = value; }
@@ -32,21 +34,30 @@ namespace Watermelon
 
             Redraw();
             Activate();
+
+         
         }
 
         public void Redraw()
         {
-            text.text = LevelController.lastLevelMoneyCollected.ToString();
-
+            text.text = CurrenciesController.Get(CurrencyType.Coin).ToString();
+            ticketstext.text = APIManager.ticketsAmount.ToString();
+            
            
+
+
         }
 
         public void SetAmount(int amount, bool format = true)
         {
             text.text = LevelController.lastLevelMoneyCollected.ToString();
+           
 
-          
 
+
+
+
+           
 
         }
 
@@ -73,8 +84,12 @@ namespace Watermelon
 
         
             text.text = useFormattedAmount ? currency.AmountFormatted : currency.Amount.ToString();
+           // capstext.text = LevelController._pointsScore.ToString();
 
-         
+           Debug.Log ("OnCurrencyAmountChanged");
+
+           
+
         }
     }
 }

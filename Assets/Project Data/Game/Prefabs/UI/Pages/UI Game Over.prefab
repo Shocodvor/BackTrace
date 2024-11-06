@@ -241,7 +241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5544861109154773021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -293,6 +293,7 @@ MonoBehaviour:
   updateOnChange: 1
   useFormattedAmount: 1
   text: {fileID: 7877439426750371669}
+  ticketstext: {fileID: 0}
   icon: {fileID: 4064016858630298259}
 --- !u!1 &3577190212074607828
 GameObject:
@@ -936,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e6c2d23f22cb44842b78fbf6a075a98f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 012250d40ad19a348ad7be0fbf36d238, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1320,6 +1321,7 @@ MonoBehaviour:
   reviveButton: {fileID: 6384955690124956067}
   continueButton: {fileID: 3639598707896876021}
   tapToContinueText: {fileID: 1358564783089543549}
+  _coins: {fileID: 0}
 --- !u!1 &6553575449642897712
 GameObject:
   m_ObjectHideFlags: 0

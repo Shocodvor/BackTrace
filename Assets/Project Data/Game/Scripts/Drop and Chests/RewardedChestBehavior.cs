@@ -14,6 +14,8 @@ namespace Watermelon.SquadShooter
         [SerializeField] Transform adHolder;
         [SerializeField] Canvas adCanvas;
 
+         private static UIGame uiGame;
+
         private void Awake()
         {
             rvButton.onClick.AddListener(OnButtonClick);
@@ -54,36 +56,34 @@ namespace Watermelon.SquadShooter
 
         private void OnButtonClick()
         {
-            Ads.Instance.ShowReward(() =>
-            {
-                opened = true;
 
-                animatorRef.SetTrigger(OPEN_HASH);
-                rvAnimator.SetBool(IS_OPEN_HASH, false);
+        
 
-                Tween.DelayedCall(0.3f, () =>
-                {
-                    DropResources();
-                    particle.SetActive(false);
-                });
-            });
-            // AdsManager.ShowRewardBasedVideo((success) =>
-            // {
-            //     if (success)
-            //     {
-            //         opened = true;
-            //
-            //         animatorRef.SetTrigger(OPEN_HASH);
-            //         rvAnimator.SetBool(IS_OPEN_HASH, false);
-            //
-            //         Tween.DelayedCall(0.3f, () =>
-            //         {
-            //             DropResources();
-            //             particle.SetActive(false);
-            //             Vibration.Vibrate(AudioController.Vibrations.shortVibration);
-            //         });
-            //     } 
-            // });
-        }
+         
+         
+            AppManager.Instance.PayTicketAndStart((success) =>
+             {
+                 if (success)
+                 {
+                    opened = true;
+            
+                     animatorRef.SetTrigger(OPEN_HASH);
+                    rvAnimator.SetBool(IS_OPEN_HASH, false);
+            
+                     Tween.DelayedCall(0.3f, () =>
+                     {
+                       DropResources();
+                       particle.SetActive(false);
+
+
+                         uiGame = UIController.GetPage<UIGame>();
+                       
+                       uiGame.UpdateCaps();
+                    //   Vibration.Vibrate(AudioController.Vibrations.shortVibration);
+                     });
+                 } 
+             });
+       
     }
+}
 }

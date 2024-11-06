@@ -23,6 +23,8 @@ namespace Watermelon.LevelSystem
         private static bool isLevelLoaded;
         private static LevelData loadedLevel;
 
+        public static bool StartGame;
+
         private static bool isRoomLoaded;
         private static RoomData loadedRoom;
 
@@ -57,6 +59,8 @@ namespace Watermelon.LevelSystem
         private static bool needCharacterSugession;
         public static bool NeedCharacterSugession => needCharacterSugession;
 
+        public static int _pointsScore;
+
         // Drop
         private static List<List<DropData>> roomRewards;
         private static List<List<DropData>> roomChestRewards;
@@ -67,6 +71,8 @@ namespace Watermelon.LevelSystem
 
         public static Action OnGameplayStart;
         public static Action OnGameplayFinish;
+
+
 
         // Pedestal
         public static PedestalBehavior PedestalBehavior { get; private set; }
@@ -99,6 +105,8 @@ namespace Watermelon.LevelSystem
 
             // Store current level
             currentLevelData = levelsDatabase.GetLevel(levelSave.WorldIndex, levelSave.LevelIndex);
+
+            Debug.Log(isLevelLoaded);
         }
 
         public static void SpawnPlayer()
@@ -118,7 +126,7 @@ namespace Watermelon.LevelSystem
 
             characterBehaviour.SetGraphics(characterStage.Prefab, false, false);
             characterBehaviour.SetGun(WeaponsController.GetCurrentWeapon(), false);
-           
+
         }
 
         public static void LoadCurrentLevel()
@@ -175,6 +183,8 @@ namespace Watermelon.LevelSystem
             int chestsAmount = currentLevelData.GetChestsAmount();
 
             List<int> moneyPerRoomOrChest = new List<int>();
+
+            List<int> CapsPerRoomOrChest = new List<int>();
             DropData coinsReward;
 
             coinsReward = currentLevelData.DropData.Find(d => d.dropType == DropableItemType.Currency && d.currencyType == CurrencyType.Coin);
@@ -196,8 +206,12 @@ namespace Watermelon.LevelSystem
                     if (moneyPerRoomOrChest[i] > 0)
                     {
                         roomRewards[i].Add(new DropData() { dropType = DropableItemType.Currency, currencyType = CurrencyType.Coin, amount = moneyPerRoomOrChest[i] });
+                       // roomRewards[i].Add(new DropData() { dropType = DropableItemType.Currency, currencyType = CurrencyType.Caps, amount = CapsPerRoomOrChest[i] });
+
                     }
                 }
+
+
 
                 // if room is last - give special reward
                 if (i == roomsAmount - 1)
@@ -436,6 +450,8 @@ namespace Watermelon.LevelSystem
         {
             EnemyController.OnLevelWillBeStarted();
 
+            StartGame = true;
+
             if (NavMeshController.IsNavMeshCalculated)
             {
                 NavMeshController.ForceActivation();
@@ -472,13 +488,15 @@ namespace Watermelon.LevelSystem
             if (ActiveRoom.AreAllEnemiesDead())
             {
 
-                if (currentRoomIndex == 9)
+                    Debug.Log(currentRoomIndex);
+
+                if (currentRoomIndex == 21)
 
                 {
                     ActiveRoom.ClearEnemies();
-                    RoomData roomData = currentLevelData.Rooms[7];
+                    RoomData roomData = currentLevelData.Rooms[20];
 
-                 
+
 
 
                     EnemyEntityData[] enemies = roomData.EnemyEntities;
@@ -492,11 +510,88 @@ namespace Watermelon.LevelSystem
 
                 }
 
+                if (currentRoomIndex == 1)
+
+                {
+
+
+                    Debug.Log ("currentRoomIndex == 2");        
+
+
+                    ActiveRoom.ClearEnemies();
+
+                    currentRoomIndex = currentRoomIndex + 1;
+
+                    RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
+
+                
+
+
+                    // LevelController.CurrentLevelData.GetCoinsReward();
+
+
+                  //  AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected); // здесь вставить кепки вместо монет
+
+
+                   EnvironmentEntityData[] environments = roomData.EnvironmentEntities;
+
+                     for (int i = 0; i < environments.Length; i++)
+            {
+                ActiveRoom.SpawnEnvironment(activeObstaclesPreset.GetEnvironment(environments[i].EnvironmentType), environments[i]);
+            }
+
+                 ObstacleEntityData[] obstacles = roomData.ObstacleEntities;
+            for (int i = 0; i < obstacles.Length; i++)
+            {
+                ActiveRoom.SpawnObstacle(activeObstaclesPreset.GetObstacle(obstacles[i].ObstaclesType), obstacles[i]);
+            }
+
+                    
+
+
+
+
+                    EnemyEntityData[] enemies = roomData.EnemyEntities;
+                    for (int i = 0; i < enemies.Length; i++)
+                    {
+                        ActiveRoom.SpawnEnemy(EnemyController.Database.GetEnemyData(enemies[i].EnemyType), enemies[i], false);
+                    }
+
+
+
+                        if (roomData.ChestEntities != null)
+            {
+                for (int i = 0; i < roomData.ChestEntities.Length; i++)
+                {
+                    var chest = roomData.ChestEntities[i];
+
+                    if (chest.IsInited)
+                    {
+                        ActiveRoom.SpawnChest(chest, LevelSettings.GetChestData(chest.ChestType));
+                    }
+                }
+            }
+
+
+
+
+                    ActiveRoom.ActivateEnemies();
+                    ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[0]);
+
+
+
+
+                }
+
+
+
+                
+
                 else
                 {
 
-                 
-                    Debug.Log("Respawn");
+
+
 
                     ActiveRoom.ClearEnemies();
 
@@ -507,9 +602,12 @@ namespace Watermelon.LevelSystem
                     RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
 
                     Debug.Log(currentRoomIndex);
-                    Debug.Log("Coins Reaward is" + LevelController.lastLevelMoneyCollected);
+
+
                     // LevelController.CurrentLevelData.GetCoinsReward();
-                    AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected);
+
+
+                  //  AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected); // здесь вставить кепки вместо монет
 
 
                     EnemyEntityData[] enemies = roomData.EnemyEntities;
@@ -517,6 +615,24 @@ namespace Watermelon.LevelSystem
                     {
                         ActiveRoom.SpawnEnemy(EnemyController.Database.GetEnemyData(enemies[i].EnemyType), enemies[i], false);
                     }
+
+
+
+                        if (roomData.ChestEntities != null)
+            {
+                for (int i = 0; i < roomData.ChestEntities.Length; i++)
+                {
+                    var chest = roomData.ChestEntities[i];
+
+                    if (chest.IsInited)
+                    {
+                        ActiveRoom.SpawnChest(chest, LevelSettings.GetChestData(chest.ChestType));
+                    }
+                }
+            }
+
+
+
 
                     ActiveRoom.ActivateEnemies();
                     ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[0]);
@@ -583,6 +699,8 @@ namespace Watermelon.LevelSystem
             lastLevelMoneyCollected += amount;
 
             uiGame.UpdateCoinsText(CurrenciesController.Get(CurrencyType.Coin) + lastLevelMoneyCollected);
+
+
         }
 
         public static void OnRewardedCoinPicked(int amount)
@@ -632,7 +750,7 @@ namespace Watermelon.LevelSystem
 
                 StartGameplay();
             }
-            
+
         }
 
         public static void OnLevelCompleted()
@@ -714,6 +832,8 @@ namespace Watermelon.LevelSystem
             uiGame.Joystick.DisableControl();
 
             GameController.OnLevelFailded();
+             StartGame = false;
+             _pointsScore = 0;
         }
 
         public static string GetCurrentAreaText()
@@ -782,4 +902,5 @@ namespace Watermelon.LevelSystem
 
         #endregion
     }
+
 }

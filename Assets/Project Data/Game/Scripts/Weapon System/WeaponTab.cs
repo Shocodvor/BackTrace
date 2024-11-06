@@ -106,12 +106,33 @@ namespace Watermelon.SquadShooter
 
         public void OnButtonClicked()
         {
+
+         //    UIController.ShowPage<UIWeaponPage>();
+
+             
             UIController.HidePage<UIMainMenu>(() =>
-            {
+           {
                 UIController.ShowPage<UIWeaponPage>();
-            });
+           });
 
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
         }
+
+
+
+                public void OnAttributtedClick()
+        {
+
+         //    UIController.ShowPage<UIWeaponPage>();
+
+             
+            UIController.HidePage<UIMainMenu>(() =>
+           {
+                UIController.ShowPage<UIAtributePage>();
+           });
+
+            AudioController.PlaySound(AudioController.Sounds.buttonSound);
+        }
+
     }
 }

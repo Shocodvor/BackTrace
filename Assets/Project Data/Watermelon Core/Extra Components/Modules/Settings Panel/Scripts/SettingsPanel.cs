@@ -2,6 +2,7 @@
 
 using UnityEngine;
 using Watermelon.LevelSystem;
+using Watermelon.SquadShooter;
 
 namespace Watermelon
 {
@@ -37,6 +38,11 @@ namespace Watermelon
         private bool isAnimationActive = false;
 
         private Vector2[] buttonPositions;
+
+        public CharacterBehaviour characterBehaviour;
+
+          private static UIGame uiGame;
+
         public Vector2[] ButtonPositions
         {
             get { return buttonPositions; }
@@ -136,6 +142,46 @@ namespace Watermelon
 
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
         }
+
+
+        public void PluseHealth()
+        {
+
+                  
+            AppManager.Instance.PayTicketAndStart((success) =>
+             {
+                 if (success && APIManager.ticketsAmount>0)
+                 {
+               
+            
+                     Tween.DelayedCall(0.3f, () =>
+                     {
+                characterBehaviour =  GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterBehaviour>();
+
+            characterBehaviour.currentHealth = Mathf.Clamp(characterBehaviour.currentHealth+50, 0, characterBehaviour. MaxHealth);
+            characterBehaviour.healthbarBehaviour.OnHealthChanged();
+            characterBehaviour.healingParticle.Play();
+
+                 uiGame = UIController.GetPage<UIGame>();
+
+              
+                 uiGame.UpdateCaps();
+          
+
+
+                
+                     });
+                 } 
+             });
+          
+
+           
+
+
+        }
+
+
+
 
         public void Show()
         {

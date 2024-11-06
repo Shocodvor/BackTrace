@@ -49,6 +49,8 @@ namespace Watermelon
             text.text = currency.AmountFormatted;
 
             rectTransform.sizeDelta = CurrencyUIHelper.GetPanelSize(text.text.Length - 1);
+
+            Debug.Log ("Resraw");
         }
 
         public void SetAmount(int amount)

@@ -17,13 +17,13 @@ MonoBehaviour:
     prefab: {fileID: 4796623966293115903, guid: 4434b3e53ef0a7e49bac91e839bb1b91,
       type: 3}
     stats:
-      hp: 200
+      hp: 150
       visionRange: 45
       attackDistance: 45
       fleeDistance: 5
       damage:
-        firstValue: 5
-        secondValue: 9
+        firstValue: 20
+        secondValue: 25
       aimDuration: 0
       moveSpeed: 17
       patrollingSpeed: 10
@@ -32,8 +32,8 @@ MonoBehaviour:
       angularSpeed: 400
       preferedDistanceToPlayer: 3
       level: 1
-      eliteHealthMult: 2.5
-      eliteDamageMult: 1.1
+      eliteHealthMult: 3
+      eliteDamageMult: 2
       healForPlayer:
         firstValue: 15
         secondValue: 40
@@ -46,22 +46,22 @@ MonoBehaviour:
     prefab: {fileID: 2816206852611366199, guid: a88d0da006cc9fa4fbaab4ee2febfc36,
       type: 3}
     stats:
-      hp: 200
-      visionRange: 55
+      hp: 300
+      visionRange: 300
       attackDistance: 7
       fleeDistance: 0
       damage:
-        firstValue: 11
-        secondValue: 13
+        firstValue: 120
+        secondValue: 150
       aimDuration: 0
-      moveSpeed: 40
-      patrollingSpeed: 14
+      moveSpeed: 60
+      patrollingSpeed: 30
       patrollingMutliplier: 0.4
       patrollingIdleDuration: 1.5
       angularSpeed: 400
       preferedDistanceToPlayer: 5
       level: 1
-      eliteHealthMult: 2.5
+      eliteHealthMult: 3
       eliteDamageMult: 1.1
       healForPlayer:
         firstValue: 15
@@ -104,13 +104,13 @@ MonoBehaviour:
     prefab: {fileID: 5939714238598631221, guid: 7d94978edd36fa143bd1c392740860ab,
       type: 3}
     stats:
-      hp: 120
-      visionRange: 100
-      attackDistance: 100
+      hp: 100
+      visionRange: 400
+      attackDistance: 400
       fleeDistance: 10
       damage:
-        firstValue: 60
-        secondValue: 80
+        firstValue: 150
+        secondValue: 200
       aimDuration: 0
       moveSpeed: 30
       patrollingSpeed: 10
@@ -119,7 +119,7 @@ MonoBehaviour:
       angularSpeed: 400
       preferedDistanceToPlayer: 5
       level: 1
-      eliteHealthMult: 2.5
+      eliteHealthMult: 4
       eliteDamageMult: 1.1
       healForPlayer:
         firstValue: 40
@@ -134,14 +134,14 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 200
-      visionRange: 55
+      visionRange: 150
       attackDistance: 50
       fleeDistance: 10
       damage:
         firstValue: 4
         secondValue: 7
       aimDuration: 0
-      moveSpeed: 17
+      moveSpeed: 15
       patrollingSpeed: 10
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
@@ -163,19 +163,19 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 1976.86
-      visionRange: 90
-      attackDistance: 0
+      visionRange: 500
+      attackDistance: 500
       fleeDistance: 0
       damage:
         firstValue: 8
         secondValue: 16
       aimDuration: 0
-      moveSpeed: 20
-      patrollingSpeed: 0
+      moveSpeed: 50
+      patrollingSpeed: 30
       patrollingMutliplier: 0
       patrollingIdleDuration: 0
-      angularSpeed: 400
-      preferedDistanceToPlayer: 15
+      angularSpeed: 0
+      preferedDistanceToPlayer: 50
       level: 1
       eliteHealthMult: 1
       eliteDamageMult: 1
@@ -192,8 +192,8 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 240
-      visionRange: 90
-      attackDistance: 100
+      visionRange: 300
+      attackDistance: 300
       fleeDistance: 20
       damage:
         firstValue: 15
@@ -207,7 +207,7 @@ MonoBehaviour:
       preferedDistanceToPlayer: 0
       level: 1
       eliteHealthMult: 2.5
-      eliteDamageMult: 1.1
+      eliteDamageMult: 2
       healForPlayer:
         firstValue: 20
         secondValue: 35
@@ -220,23 +220,23 @@ MonoBehaviour:
     prefab: {fileID: 4796623966293115903, guid: 6a09a19cf7451284a916df143920ba01,
       type: 3}
     stats:
-      hp: 230
-      visionRange: 60
+      hp: 300
+      visionRange: 300
       attackDistance: 45
       fleeDistance: 15
       damage:
-        firstValue: 6
-        secondValue: 10
-      aimDuration: 0.2
-      moveSpeed: 17
-      patrollingSpeed: 10
+        firstValue: 10
+        secondValue: 20
+      aimDuration: 0
+      moveSpeed: 80
+      patrollingSpeed: 30
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
       angularSpeed: 400
       preferedDistanceToPlayer: 3
       level: 1
-      eliteHealthMult: 2.5
-      eliteDamageMult: 1.1
+      eliteHealthMult: 4
+      eliteDamageMult: 4
       healForPlayer:
         firstValue: 15
         secondValue: 40
@@ -249,22 +249,22 @@ MonoBehaviour:
     prefab: {fileID: 4796623966293115903, guid: 3d73d0115aa6d84478931f724d8835be,
       type: 3}
     stats:
-      hp: 240
-      visionRange: 60
-      attackDistance: 30
+      hp: 400
+      visionRange: 200
+      attackDistance: 25
       fleeDistance: 0
       damage:
-        firstValue: 6
-        secondValue: 6
+        firstValue: 20
+        secondValue: 23
       aimDuration: 0.2
-      moveSpeed: 10
+      moveSpeed: 5
       patrollingSpeed: 6
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
       angularSpeed: 400
       preferedDistanceToPlayer: 3
       level: 1
-      eliteHealthMult: 2.5
+      eliteHealthMult: 1.5
       eliteDamageMult: 1.1
       healForPlayer:
         firstValue: 15
@@ -283,8 +283,8 @@ MonoBehaviour:
       attackDistance: 100
       fleeDistance: 0
       damage:
-        firstValue: 80
-        secondValue: 110
+        firstValue: 60
+        secondValue: 80
       aimDuration: 0
       moveSpeed: 40
       patrollingSpeed: 10

@@ -39,6 +39,10 @@ namespace Watermelon.SquadShooter
         [SerializeField] Color upgradeStateUnactiveColor = Color.white;
         [SerializeField] Image[] upgradesStatesImages;
 
+           private static UIGame uiGame;
+
+        public CurrencyUIPanelSimple _currencyUIPanelSimple;
+
         public WeaponData Data { get; private set; }
 
         private BaseWeaponUpgrade Upgrade { get; set; }
@@ -244,7 +248,67 @@ namespace Watermelon.SquadShooter
                 AudioController.PlaySound(AudioController.Sounds.buttonSound);
 
                 UIGeneralPowerIndicator.UpdateText(true);
+
+
+                 _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
+                 _currencyUIPanelSimple.Redraw();
+
+                  
+
+                    uiGame = UIController.GetPage<UIGame>();
+
+                     uiGame.UpdateCoinsText(CurrenciesController.Get(CurrencyType.Coin));
+                       
+                     uiGame.UpdateCaps();
+
             }
+
+
+
+        }
+
+          public void UpgradeByCaps()
+        {
+
+                
+            AppManager.Instance.PayTicketAndStart((success) =>
+             {
+               if (success && APIManager.ticketsAmount>0)
+                 {
+               
+            
+                     Tween.DelayedCall(0.3f, () =>
+                     {
+                       SelectWeapon();
+
+
+                Upgrade.UpgradeStage();
+
+                weaponController.WeaponUpgraded(Data);
+
+                AudioController.PlaySound(AudioController.Sounds.buttonSound);
+
+                UIGeneralPowerIndicator.UpdateText(true);
+
+
+                _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
+                 _currencyUIPanelSimple.Redraw();
+
+                    uiGame = UIController.GetPage<UIGame>();
+                       
+                     uiGame.UpdateCaps();
+
+
+
+
+                
+                     });
+                 } 
+             });
+          
+               
+       
+            
         }
 
         private void OnDisable()

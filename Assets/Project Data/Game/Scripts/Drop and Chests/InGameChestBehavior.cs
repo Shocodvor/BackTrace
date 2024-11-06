@@ -51,7 +51,7 @@ namespace Watermelon.SquadShooter
 
             while (timer < openDuration)
             {
-                timer += Time.deltaTime;
+                timer += Time.deltaTime/3;
 
                 fillCircleImage.fillAmount = timer / openDuration;
                 yield return null;

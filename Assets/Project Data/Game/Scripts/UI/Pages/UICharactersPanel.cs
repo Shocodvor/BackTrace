@@ -61,6 +61,8 @@ namespace Watermelon.SquadShooter
 
                 characterPanels[i] = tempCharacter.GetComponent<CharacterPanelUI>();
                 characterPanels[i].Initialise(charactersDatabase.Characters[i], this);
+
+                //здесь создаются панельки
             }
 
             currencies = CurrenciesController.Currencies;
