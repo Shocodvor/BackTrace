@@ -7486,4 +7486,5 @@ MonoBehaviour:
       currencyType: 0
       cardType: 0
       amount: 2000
-    specialBehaviours: []
+    specialBehaviours:
+    - {fileID: 11400000, guid: 81fad66ce9ed64d488606cf6df97a837, type: 2}

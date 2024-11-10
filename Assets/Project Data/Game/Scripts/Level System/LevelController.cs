@@ -483,10 +483,93 @@ namespace Watermelon.LevelSystem
             manualExitActivation = true;
         }
 
+
+        public static void LoadNextRoom()
+
+        {
+
+
+  
+
+
+               
+
+
+                    ActiveRoom.ClearEnemies();
+
+                    currentRoomIndex = currentRoomIndex + 1;
+
+                    RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
+
+                
+
+
+                    // LevelController.CurrentLevelData.GetCoinsReward();
+
+
+                  //  AppManager.OnGameOver.Invoke(LevelController.lastLevelMoneyCollected); // здесь вставить кепки вместо монет
+
+
+                   EnvironmentEntityData[] environments = roomData.EnvironmentEntities;
+
+                     for (int i = 0; i < environments.Length; i++)
+            {
+                  ActiveRoom.SpawnEnvironment(activeObstaclesPreset.GetEnvironment(environments[i].EnvironmentType), environments[i]);
+            }
+
+                 ObstacleEntityData[] obstacles = roomData.ObstacleEntities;
+            for (int i = 0; i < obstacles.Length; i++)
+            {
+                ActiveRoom.SpawnObstacle(activeObstaclesPreset.GetObstacle(obstacles[i].ObstaclesType), obstacles[i]);
+            }
+
+                    
+
+
+
+
+                    EnemyEntityData[] enemies = roomData.EnemyEntities;
+                    for (int i = 0; i < enemies.Length; i++)
+                    {
+                        ActiveRoom.SpawnEnemy(EnemyController.Database.GetEnemyData(enemies[i].EnemyType), enemies[i], false);
+                    }
+
+
+
+                        if (roomData.ChestEntities != null)
+            {
+                for (int i = 0; i < roomData.ChestEntities.Length; i++)
+                {
+                    var chest = roomData.ChestEntities[i];
+
+                    if (chest.IsInited)
+                    {
+                        ActiveRoom.SpawnChest(chest, LevelSettings.GetChestData(chest.ChestType));
+                    }
+                }
+            }
+
+
+
+
+                    ActiveRoom.ActivateEnemies();
+                    ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[0]);
+
+
+
+
+                }
+
+
+
+        
+
         public static void ActivateExit()
         {
             if (ActiveRoom.AreAllEnemiesDead())
             {
+
+                   ActiveRoom.ExitPointBehaviour.OnExitActivated();
 
                     Debug.Log(currentRoomIndex);
 
@@ -495,9 +578,6 @@ namespace Watermelon.LevelSystem
                 {
                     ActiveRoom.ClearEnemies();
                     RoomData roomData = currentLevelData.Rooms[20];
-
-
-
 
                     EnemyEntityData[] enemies = roomData.EnemyEntities;
                     for (int i = 0; i < enemies.Length; i++)
@@ -537,7 +617,7 @@ namespace Watermelon.LevelSystem
 
                      for (int i = 0; i < environments.Length; i++)
             {
-                ActiveRoom.SpawnEnvironment(activeObstaclesPreset.GetEnvironment(environments[i].EnvironmentType), environments[i]);
+                  ActiveRoom.SpawnEnvironment(activeObstaclesPreset.GetEnvironment(environments[i].EnvironmentType), environments[i]);
             }
 
                  ObstacleEntityData[] obstacles = roomData.ObstacleEntities;

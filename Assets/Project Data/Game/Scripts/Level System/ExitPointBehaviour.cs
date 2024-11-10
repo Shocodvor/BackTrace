@@ -19,7 +19,10 @@ namespace Watermelon.LevelSystem
 
             if (other.gameObject.layer.Equals(PhysicsHelper.LAYER_PLAYER))
             {
-                OnPlayerEnteredExit();
+             //   OnPlayerEnteredExit();
+
+                LevelController.LoadNextRoom();
+
             }
         }
 
@@ -30,7 +33,7 @@ namespace Watermelon.LevelSystem
 
             if (other.gameObject.layer.Equals(PhysicsHelper.LAYER_PLAYER))
             {
-                OnPlayerEnteredExit();
+            //    OnPlayerEnteredExit();
             }
         }
     }

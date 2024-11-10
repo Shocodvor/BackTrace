@@ -57,7 +57,7 @@ namespace Watermelon
 
         public void UpdateFixedPosition()
         {
-            targetPosition = fixedTargetTransform.position;
+//            targetPosition = fixedTargetTransform.position;
         }
 
         public void FixArrowToTarget(Transform target)

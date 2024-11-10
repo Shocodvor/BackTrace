@@ -137,7 +137,7 @@ namespace Watermelon.LevelSystem
             arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, enemyBehavior.transform.position);
             arrowCase.FixArrowToTarget(enemyBehavior.transform);
 
-            tutorialLabelBehaviour = TutorialController.CreateTutorialLabel(TextTranslator.GetText("УБЕЙ ВРАГА", "KILL THE ENEMY"), enemyBehavior.transform, new Vector3(0, 20.0f, 0));
+            tutorialLabelBehaviour = TutorialController.CreateTutorialLabel(TextTranslator.GetText("Открой сундук", "Open the chest"), enemyBehavior.transform, new Vector3(0, 20.0f, 0));
 
             BaseEnemyBehavior.OnDiedEvent += OnEnemyDied;
         }
