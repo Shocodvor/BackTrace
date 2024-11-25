@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Weapon Database
   m_EditorClassIdentifier: 
   weapons:
-  - name: Pistols
-    nameRU: "\u041F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u044B"
-    type: 8
-    upgradeType: 9
-    rarity: 0
-    icon: {fileID: 21300000, guid: a5e9112dc45668c4db72eca4fa61526b, type: 3}
   - name: Pulse Gun
     nameRU: "\u0428\u0442\u0443\u0440\u043C\u043E\u0432\u0430\u044F \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0430"
     type: 9
     upgradeType: 10
     rarity: 0
     icon: {fileID: 21300000, guid: ea81d9948b976fd458e974f9de99bb64, type: 3}
+  - name: Pistols
+    nameRU: "\u041F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u044B"
+    type: 8
+    upgradeType: 9
+    rarity: 0
+    icon: {fileID: 21300000, guid: a5e9112dc45668c4db72eca4fa61526b, type: 3}
   - name: SHOTGUN
     nameRU: "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
     type: 3

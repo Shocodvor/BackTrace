@@ -13,8 +13,16 @@ namespace Watermelon.SquadShooter
 
         private static CharacterBehaviour characterBehaviour;
 
+         
+
         [SerializeField] NavMeshAgent agent;
         [SerializeField] EnemyDetector enemyDetector;
+
+          private LineNavigationArrowCase arrowCase;
+
+            private Transform finishPointTransform;
+
+         
 
         [Header("Health")]
         [SerializeField] public HealthbarBehaviour healthbarBehaviour;
@@ -100,6 +108,8 @@ namespace Watermelon.SquadShooter
 
         public static bool NoDamage { get; private set; } = false;
 
+       
+
         public static SimpleCallback OnDied;
 
              private static UIGame uiGame;
@@ -111,6 +121,8 @@ namespace Watermelon.SquadShooter
 
         public void Initialise()
         {
+
+          
             characterBehaviour = this;
 
             hitShinePropertyBlock = new MaterialPropertyBlock();
@@ -151,6 +163,8 @@ namespace Watermelon.SquadShooter
             targetRingRenderer = targetRing.GetComponent<Renderer>();
 
             aimRingBehavior.Hide();
+
+            
         }
 
         public void Reload(bool resetHealth = true)
@@ -275,6 +289,8 @@ namespace Watermelon.SquadShooter
             playerTarget.position = position.AddToZ(10f);
             transform.position = position;
             transform.rotation = Quaternion.identity;
+
+            
 
             if(agent.isActiveAndEnabled && agent.isOnNavMesh)
             {
@@ -449,6 +465,8 @@ namespace Watermelon.SquadShooter
             graphics.Activate();
 
             NavMeshController.InvokeOrSubscribe(this);
+
+             finishPointTransform = GameObject.FindGameObjectWithTag("PedestalInGame").GetComponent<Transform> ();
         }
 
         public void Disable()
@@ -654,6 +672,8 @@ namespace Watermelon.SquadShooter
 
         public void OnCloseEnemyChanged(BaseEnemyBehavior enemyBehavior)
         {
+
+           
             if (enemyBehavior != null)
             {
                 if (closestEnemyBehaviour == null)
@@ -697,6 +717,9 @@ namespace Watermelon.SquadShooter
 
         public static BaseEnemyBehavior GetClosestEnemy()
         {
+
+          
+            
             return characterBehaviour.enemyDetector.ClosestEnemy;
         }
 
@@ -708,10 +731,14 @@ namespace Watermelon.SquadShooter
         public void TryAddClosestEnemy(BaseEnemyBehavior enemy)
         {
             EnemyDetector.TryAddClosestEnemy(enemy);
+
+        
         }
 
         public void SetTargetActive()
         {
+
+          
             if (closestEnemyBehaviour != null && closestEnemyBehaviour.Tier == EnemyTier.Elite)
             {
                 targetRingRenderer.material.color = targetRingSpecialColor;
@@ -748,27 +775,47 @@ namespace Watermelon.SquadShooter
             {
                  other.GetComponent<AbstractChestBehavior>().ChestApproached();
 
-                   Debug.Log("Tag PEDESTALvior");
+                 
 
                      AudioController.PlaySound(AudioController.Sounds.buttonSound);
-        
 
-            CurrenciesController.Add(CurrencyType.Coin, LevelController.lastLevelMoneyCollected);
-            AppManager.OnGameOver.Invoke(LevelController._pointsScore);
+                       UIController.ShowPage<UIWeaponPage>();
+
+                        UIController.ShowPage<UICharactersPanel>();
+
+                      
+
+                          NavigationArrowController.activeArrowsCount = 0;
+                            NavigationArrowController.activeArrows.Clear();
 
 
+                          //  if (arrowCase != null)
+              //  {
+                 //   arrowCase.DisableArrow();
+                  //  arrowCase = null;
+              //  }
 
-            LevelController._pointsScore = 0;
-            LevelController.lastLevelMoneyCollected = 0;
+                      // LevelController.LoadLevel(1,0);
+
+                    //  LevelController. ResetDetect ();
+
+                      // LevelController.UnloadLevel();
+                    //  LevelController.IncreaseLevelInSave();
+
+                    //   LevelController.ActivateExit();
+                   // LevelController.LoadLevel(1,0);
 
                 uiGame = UIController.GetPage<UIGame>();
 
               
                  uiGame.UpdateCaps();
 
-                   currentHealth = Mathf.Clamp(currentHealth + 2, 0, MaxHealth);
+                   currentHealth = MaxHealth;
                healthbarBehaviour.OnHealthChanged();
                 healingParticle.Play();  
+
+                     ActiveRoom.ExitPointBehaviour.OnExitActivated();    
+                     
 
             }
 
@@ -781,9 +828,20 @@ namespace Watermelon.SquadShooter
             {
                 other.GetComponent<AbstractChestBehavior>().ChestLeft();
 
-               
+              
             }
+
+            if (other.CompareTag(PhysicsHelper.TAG_Pedestal))
+            {
+              //  other.GetComponent<AbstractChestBehavior>().ChestLeft();
+
+              UIController.HidePage<UICharactersPanel>();
+              Debug.Log("HidePage<UICharactersPanel>");
+
         }
+        }
+
+ 
 
         public void OnItemPicked(IDropableItem item)
         {
@@ -818,6 +876,11 @@ namespace Watermelon.SquadShooter
                 //����� ����� ��� ������� ���� ��� �������� �������� ����������
 
                 LevelController._pointsScore += 10;
+                
+                
+
+                 arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, (finishPointTransform.position));
+
 
               
             }

@@ -42,10 +42,10 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 45
-      secondValue: 58
+      firstValue: 5
+      secondValue: 10
     rangeRadius: 40
-    fireRate: 2.2
+    fireRate: 0.5
     spread: 0
     power: 87
     bulletsPerShot:
@@ -62,8 +62,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 60
-      secondValue: 62
+      firstValue: 5
+      secondValue: 12
     rangeRadius: 40
     fireRate: 2.3
     spread: 0
@@ -82,8 +82,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 63
-      secondValue: 65
+      firstValue: 7
+      secondValue: 12
     rangeRadius: 40
     fireRate: 2.5
     spread: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 65
-      secondValue: 67
+      firstValue: 8
+      secondValue: 14
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 67
-      secondValue: 70
+      firstValue: 10
+      secondValue: 15
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -142,8 +142,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 70
-      secondValue: 73
+      firstValue: 8
+      secondValue: 15
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -162,8 +162,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 75
-      secondValue: 79
+      firstValue: 12
+      secondValue: 18
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 80
-      secondValue: 85
+      firstValue: 10
+      secondValue: 20
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -202,8 +202,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 90
-      secondValue: 95
+      firstValue: 12
+      secondValue: 22
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -222,8 +222,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 110
-      secondValue: 120
+      firstValue: 14
+      secondValue: 22
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -242,8 +242,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 130
-      secondValue: 150
+      firstValue: 15
+      secondValue: 25
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -262,8 +262,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 150
-      secondValue: 170
+      firstValue: 16
+      secondValue: 26
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -282,8 +282,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 180
-      secondValue: 200
+      firstValue: 17
+      secondValue: 30
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -302,8 +302,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 200
-      secondValue: 220
+      firstValue: 20
+      secondValue: 35
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -322,8 +322,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 220
-      secondValue: 240
+      firstValue: 25
+      secondValue: 40
     rangeRadius: 40
     fireRate: 2.7
     spread: 0
@@ -342,8 +342,8 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 6d6abdbe3a5c2054996cd0238671e0a6,
       type: 3}
     damage:
-      firstValue: 240
-      secondValue: 250
+      firstValue: 30
+      secondValue: 45
     rangeRadius: 40
     fireRate: 2.7
     spread: 0

@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _en: EXIT
-  _ru: "\u0412\u042B\u0425\u041E\u0414"
+  _ru: EXIT
 --- !u!1 &4657354246521216828
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 2969111272806200134}
   - component: {fileID: 2777589827953189835}
   - component: {fileID: 8712997194836731409}
+  - component: {fileID: 3679125297432920394}
   m_Layer: 15
   m_Name: Gate Exit Point
   m_TagString: Untagged
@@ -435,6 +436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4778429d71fb3d348bf0fa0ee5a1c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoinsClaim: {fileID: 8514317329776906613}
+  boxCollider: {fileID: 8712997194836731409}
   gatesAnimator: {fileID: 8514317329776906613}
 --- !u!65 &8712997194836731409
 BoxCollider:
@@ -457,6 +460,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15, y: 15, z: 15}
   m_Center: {x: 0, y: 5, z: 2}
+--- !u!114 &3679125297432920394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884411178410358801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92b300e8370ad8498658d26e6cba354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6294913205474757559
 GameObject:
   m_ObjectHideFlags: 0

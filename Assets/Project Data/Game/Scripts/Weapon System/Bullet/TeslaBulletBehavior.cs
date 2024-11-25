@@ -43,6 +43,8 @@ namespace Watermelon.SquadShooter
             if (targets.Count == 0)
                 return;
 
+                Debug.Log (targets.Count);
+
             Vector3 targetDirection = targets[0].transform.position.SetY(6.5f) - transform.position;
             Vector3 rotationDirection = Vector3.RotateTowards(transform.forward, targetDirection, 360, 0f);
             transform.rotation = Quaternion.LookRotation(rotationDirection);

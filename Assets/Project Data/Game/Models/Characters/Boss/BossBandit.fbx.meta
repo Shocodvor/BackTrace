@@ -16,7 +16,9 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tFound
+      duplicate transform 'Boss_Hand_1_L' for human bone 'Left Middle Proximal' and
+      'LeftHand'\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -98,6 +100,11 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Cannon_Barrel
+      parentName: Minigun
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Bandit
       parentName: BossBandit(Clone)
       position: {x: -0, y: 0, z: 0}
@@ -105,233 +112,233 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Root
       parentName: BossBandit(Clone)
-      position: {x: 0, y: 0.20672452, z: 0}
+      position: {x: 0, y: 0.20644286, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Hips
       parentName: Boss_Root
       position: {x: -0.0000052852856, y: 6.02, z: -0.039320026}
-      rotation: {x: 4.743334e-13, y: -0.00000029113596, z: 0.0000016292502, w: 1}
+      rotation: {x: 4.7433547e-13, y: -0.00000029113596, z: 0.0000016292429, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Mag_2
       parentName: Boss_Hips
-      position: {x: -1.5079739, y: 0.28005606, z: -2.1935246}
-      rotation: {x: 4.743332e-13, y: 0.00000029113596, z: -0.0000016292502, w: 1}
+      position: {x: -1.5079737, y: 0.28005603, z: -2.193525}
+      rotation: {x: 4.7433547e-13, y: 0.00000029113596, z: -0.0000016292429, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Mag_1
       parentName: Boss_Hips
-      position: {x: -1.2510197, y: 1.2325648, z: -2.0199451}
-      rotation: {x: 4.743332e-13, y: 0.00000029113596, z: -0.0000016292502, w: 1}
+      position: {x: -1.2510197, y: 1.2325648, z: -2.019945}
+      rotation: {x: 4.7433547e-13, y: 0.00000029113596, z: -0.0000016292429, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_1_R
       parentName: Boss_Hips
-      position: {x: 1.4064391, y: 0.11382947, z: -0.04806367}
-      rotation: {x: 0.72844535, y: -0.6776015, z: 0.07411982, w: -0.06877442}
+      position: {x: 1.4064392, y: 0.11382948, z: -0.048063666}
+      rotation: {x: 0.7298888, y: -0.6781284, z: 0.063720986, w: -0.057826377}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_2_R
       parentName: Boss_Leg_1_R
-      position: {x: 2.888209, y: 0.0000006726571, z: -0.00000023460235}
-      rotation: {x: -0.5756564, y: -0.053113468, z: -0.016224472, w: 0.8158035}
-      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+      position: {x: 2.8882086, y: 0.00000067265705, z: -0.00000023460233}
+      rotation: {x: -0.5756565, y: -0.0531135, z: -0.01622443, w: 0.8158035}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_LegArmor_R
       parentName: Boss_Leg_2_R
-      position: {x: -0.12685318, y: 0.7554725, z: -0.53421193}
-      rotation: {x: 0.3270562, y: 0.3658622, z: -0.58069414, w: 0.64959484}
-      scale: {x: 0.9999997, y: 1.0000005, z: 1.0000002}
+      position: {x: -0.12685318, y: 0.7554725, z: -0.5342119}
+      rotation: {x: 0.32705623, y: 0.36586222, z: -0.5806941, w: 0.64959484}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_3_R
       parentName: Boss_Leg_2_R
-      position: {x: 2.1900482, y: 0.000000012148915, z: 0.00000060364755}
-      rotation: {x: 0.8720197, y: 0.32146913, z: -0.08820367, w: 0.35841233}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+      position: {x: 2.190048, y: 0.000000012148912, z: 0.0000006036476}
+      rotation: {x: 0.8720197, y: 0.32146913, z: -0.08820366, w: 0.35841233}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_4_R
       parentName: Boss_Leg_3_R
-      position: {x: 1.3266501, y: 0.0000010104085, z: -0.0000038461853}
-      rotation: {x: 0.023919392, y: 0.043989107, z: -0.45966458, w: 0.88668}
-      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+      position: {x: 1.3266503, y: 0.0000010104085, z: -0.0000038461862}
+      rotation: {x: 0.023919417, y: 0.043989196, z: -0.45966458, w: 0.88667995}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_5_R
       parentName: Boss_Leg_4_R
-      position: {x: 0.9631372, y: 0.00000044669517, z: 0.0000046288005}
-      rotation: {x: 0.00000001816079, y: -1.7826096e-10, z: 4.656613e-10, w: 1}
+      position: {x: 0.9631372, y: 0.0000004466951, z: 0.0000046288005}
+      rotation: {x: 0.000000018250121, y: 3.469447e-16, z: -1.5612518e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_1_L
       parentName: Boss_Hips
-      position: {x: -1.3317752, y: 0.113839306, z: -0.048062027}
-      rotation: {x: 0.06920111, y: 0.07455638, z: 0.6775727, w: 0.7283872}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      position: {x: -1.3317752, y: 0.1138393, z: -0.048062023}
+      rotation: {x: 0.07276862, y: 0.07784609, z: 0.6773735, w: 0.72788036}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_2_L
       parentName: Boss_Leg_1_L
-      position: {x: -2.8934731, y: 0.0728875, z: -0.015341815}
-      rotation: {x: -0.5756565, y: -0.053113483, z: -0.016224444, w: 0.8158036}
+      position: {x: -2.893473, y: 0.0728875, z: -0.015341815}
+      rotation: {x: -0.5756565, y: -0.0531135, z: -0.01622443, w: 0.8158035}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_LegArmor_L
       parentName: Boss_Leg_2_L
-      position: {x: 0.12685692, y: -0.755473, z: 0.53421}
-      rotation: {x: 0.3270562, y: 0.3658622, z: -0.58069414, w: 0.64959484}
-      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+      position: {x: 0.12685692, y: -0.75547296, z: 0.53420997}
+      rotation: {x: 0.32705623, y: 0.36586222, z: -0.5806941, w: 0.64959484}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_3_L
       parentName: Boss_Leg_2_L
-      position: {x: -2.1900513, y: -1.2434498e-15, z: -2.4868995e-15}
-      rotation: {x: 0.8720197, y: 0.3214691, z: -0.08820373, w: 0.35841238}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      position: {x: -2.1900513, y: -7.460699e-16, z: -2.7355895e-15}
+      rotation: {x: 0.87330943, y: 0.32167158, z: -0.08727469, w: 0.3553044}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_4_L
       parentName: Boss_Leg_3_L
-      position: {x: -1.3266509, y: -7.460699e-16, z: -2.4868999e-16}
-      rotation: {x: 0.023919418, y: 0.043989245, z: -0.45966458, w: 0.88667995}
+      position: {x: -1.326651, y: -4.973799e-16, z: -7.460699e-16}
+      rotation: {x: 0.023919417, y: 0.043989196, z: -0.45966458, w: 0.88667995}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Leg_5_L
       parentName: Boss_Leg_4_L
-      position: {x: -0.9631424, y: -3.4972022e-17, z: -2.4868999e-16}
-      rotation: {x: -0, y: -0, z: -4.656613e-10, w: 1}
+      position: {x: -0.96314234, y: -3.8857806e-18, z: -7.460699e-16}
+      rotation: {x: 3.7296555e-17, y: -1.2490009e-16, z: -4.510281e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Spine
       parentName: Boss_Hips
-      position: {x: 2.0870893e-20, y: 2.0590549, z: -0.029992541}
-      rotation: {x: -0.015963439, y: 0.00000031710732, z: -0.0000016243952, w: 0.9998726}
+      position: {x: 4.1741783e-20, y: 2.0590549, z: -0.02999254}
+      rotation: {x: -0.015963439, y: 0.00000031710766, z: -0.0000016243746, w: 0.9998726}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Spine1
       parentName: Boss_Spine
-      position: {x: 1.1429934e-12, y: 1.0961219, z: -2.4868999e-16}
-      rotation: {x: -0, y: -0, z: 2.0461078e-30, w: 1}
+      position: {x: 1.1429934e-12, y: 1.096122, z: -2.1760372e-16}
+      rotation: {x: 0, y: -1.009742e-28, z: 6.5317683e-28, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Spine2
       parentName: Boss_Spine1
-      position: {x: 1.3062785e-12, y: 1.252711, z: 2.1760372e-16}
-      rotation: {x: -0, y: -0, z: 2.0461078e-30, w: 1}
+      position: {x: 1.3062783e-12, y: 1.2527112, z: 2.4868996e-16}
+      rotation: {x: 3.469447e-18, y: 1.009742e-28, z: 6.500214e-28, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Clavical_R
       parentName: Boss_Spine2
-      position: {x: 0.72239566, y: 1.2639654, z: 0.18366817}
-      rotation: {x: 0.9892325, y: -0.12462579, z: -0.076469116, w: -0.006319523}
-      scale: {x: 1, y: 1.000001, z: 1.000001}
+      position: {x: 0.72239566, y: 1.2639654, z: 0.18366814}
+      rotation: {x: 0.98923254, y: -0.12462578, z: -0.076469116, w: -0.0063195257}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_ArmArmor_1
       parentName: Boss_Clavical_R
-      position: {x: 1.085911, y: -0.60299855, z: 0.16291368}
-      rotation: {x: -0.9892074, y: 0.12583064, z: 0.07446992, w: 0.009472835}
-      scale: {x: 1, y: 0.99999934, z: 0.99999934}
+      position: {x: 1.0859112, y: -0.60299855, z: 0.16291364}
+      rotation: {x: 0.9892074, y: -0.12583062, z: -0.07446992, w: -0.009472831}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_ArmArmor_2
       parentName: Boss_Clavical_R
-      position: {x: 1.6745428, y: -0.75521356, z: 0.0708494}
-      rotation: {x: -0.9892074, y: 0.12583064, z: 0.07446992, w: 0.009472835}
-      scale: {x: 1, y: 0.99999934, z: 0.99999934}
+      position: {x: 1.6745428, y: -0.7552135, z: 0.0708494}
+      rotation: {x: 0.9892074, y: -0.12583062, z: -0.07446992, w: -0.009472831}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Arm_1_R
       parentName: Boss_Clavical_R
-      position: {x: 1.4914379, y: 0.0000037865361, z: 0.00000051922234}
-      rotation: {x: 0.0054099415, y: 0.03628752, z: -0.111237206, w: 0.99311644}
-      scale: {x: 0.9999998, y: 1.0000001, z: 1}
+      position: {x: 1.4914376, y: 0.0000037865364, z: 0.00000051922234}
+      rotation: {x: 0.0054115085, y: 0.03628734, z: -0.11123731, w: 0.9931165}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Arm_2_R
       parentName: Boss_Arm_1_R
-      position: {x: 3.2940567, y: 0.0000019812912, z: 0.00000014575721}
-      rotation: {x: 0.002078414, y: 0.06026924, z: 0.000005953014, w: 0.99818003}
-      scale: {x: 1, y: 1.0000005, z: 1.0000002}
+      position: {x: 3.2940564, y: 0.0000019812912, z: 0.00000014575723}
+      rotation: {x: 0.0020784137, y: 0.06026924, z: 0.000005950925, w: 0.99818003}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_ArmArmor_3
       parentName: Boss_Arm_2_R
-      position: {x: -0.061501462, y: 0.3131733, z: 0.9697992}
-      rotation: {x: -0.9997207, y: 0.017235788, z: -0.016167404, w: -0.00027873565}
-      scale: {x: 1, y: 0.9999991, z: 0.9999992}
+      position: {x: -0.061501462, y: 0.3131733, z: 0.96979904}
+      rotation: {x: 0.99972075, y: -0.017235788, z: 0.016167402, w: 0.00027873574}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Arm_3_R
       parentName: Boss_Arm_2_R
-      position: {x: 2.3157928, y: 0.00000041614607, z: -0.00000087529025}
-      rotation: {x: -0.00012059638, y: -0.0032137022, z: 0.0030303057, w: 0.9999903}
-      scale: {x: 1.0000001, y: 0.9999998, z: 1}
+      position: {x: 2.3157926, y: 0.00000041614604, z: -0.00000087529014}
+      rotation: {x: -0.000120596385, y: -0.0032137006, z: 0.0030303025, w: 0.9999903}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Fin_1_R
       parentName: Boss_Arm_3_R
-      position: {x: 0.7353176, y: 0.26947495, z: -0.6744827}
-      rotation: {x: 0.043972515, y: 0.043990627, z: -0.005990457, w: 0.9980458}
-      scale: {x: 0.9999996, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.7353174, y: 0.26947495, z: -0.67448264}
+      rotation: {x: 0.043972805, y: 0.04398977, z: -0.0059912964, w: 0.9980458}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Fin_2_R
       parentName: Boss_Fin_1_R
-      position: {x: 0.42950538, y: -0.0000060586685, z: -0.00000045019655}
-      rotation: {x: 0.000005301088, y: 0.000029957155, z: 0.00000033527613, w: 1}
-      scale: {x: 1, y: 0.9999997, z: 0.9999998}
+      position: {x: 0.4295054, y: -0.000006058668, z: -0.0000004501966}
+      rotation: {x: 0.000005304991, y: 0.000029963847, z: 0.00000035348864, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Fin_3_R
       parentName: Boss_Fin_2_R
-      position: {x: 0.22899261, y: 0.0000064436867, z: 0.0000065626687}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+      position: {x: 0.22899258, y: 0.000006443687, z: 0.000006562668}
+      rotation: {x: 6.730727e-16, y: 2.7755576e-17, z: 6.938894e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Hand_1_R
       parentName: Boss_Arm_3_R
-      position: {x: 1.2381505, y: -0.0000029273665, z: 0.0000005963473}
-      rotation: {x: -0.00024720444, y: -0.004054591, z: 0.020353628, w: 0.99978465}
-      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+      position: {x: 1.2381504, y: -0.0000029273667, z: 0.00000059634726}
+      rotation: {x: -0.00024720415, y: -0.004054587, z: 0.020353628, w: 0.9997846}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Hand_2_R
       parentName: Boss_Hand_1_R
-      position: {x: 1.2123624, y: -0.0000026930315, z: -0.00000060573586}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+      position: {x: 1.2123623, y: -0.0000026930315, z: -0.0000006057359}
+      rotation: {x: 2.1684043e-19, y: -1.7347235e-18, z: 3.1272456e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Clavical_L
       parentName: Boss_Spine2
-      position: {x: -0.7223958, y: 1.2639642, z: 0.18366808}
-      rotation: {x: 0.0063195247, y: -0.07646913, z: 0.12462579, w: 0.9892325}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: -0.7223958, y: 1.263964, z: 0.18366809}
+      rotation: {x: 0.0063195257, y: -0.076469116, z: 0.12462578, w: 0.98923254}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Arm_1_L
       parentName: Boss_Clavical_L
-      position: {x: -1.491443, y: -5.9685592e-15, z: 0}
-      rotation: {x: 0.0054078507, y: 0.036287475, z: -0.11123693, w: 0.9931165}
-      scale: {x: 1, y: 1.0000002, z: 1}
+      position: {x: -1.4914433, y: -7.958079e-15, z: 1.5543122e-16}
+      rotation: {x: 0.005409489, y: 0.036287557, z: -0.111237116, w: 0.9931165}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Arm_2_L
       parentName: Boss_Arm_1_L
-      position: {x: -3.2940462, y: 1.9895199e-15, z: 5.284662e-16}
-      rotation: {x: 0.0020784142, y: 0.060269244, z: 0.000005957134, w: 0.99818003}
-      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+      position: {x: -3.2940464, y: 1.19371184e-14, z: 9.325873e-16}
+      rotation: {x: 0.0020784137, y: 0.06026924, z: 0.000005950925, w: 0.99818003}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Arm_3_L
       parentName: Boss_Arm_2_L
-      position: {x: -2.3157969, y: -9.947598e-15, z: 1.3677948e-15}
-      rotation: {x: -0.00012059632, y: -0.003213703, z: 0.003030299, w: 0.9999903}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      position: {x: -2.3157966, y: -9.947598e-15, z: 1.2434498e-15}
+      rotation: {x: -0.000120596385, y: -0.0032137006, z: 0.0030303025, w: 0.9999903}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Fin_1_L
       parentName: Boss_Arm_3_L
-      position: {x: -0.73532283, y: -0.26947585, z: 0.6744826}
-      rotation: {x: 0.043976214, y: 0.04399161, z: -0.0059977174, w: 0.9980455}
-      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+      position: {x: -0.7353228, y: -0.2694759, z: 0.6744826}
+      rotation: {x: 0.04397648, y: 0.043991257, z: -0.0059981816, w: 0.99804556}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Fin_2_L
       parentName: Boss_Fin_1_L
-      position: {x: -0.42950612, y: 1.9895199e-15, z: 2.9842796e-15}
-      rotation: {x: 0.0000052750106, y: 0.000029981133, z: 0.00000036880368, w: 1}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: -0.42950606, y: 0, z: 3.9790393e-15}
+      rotation: {x: 0.000005305007, y: 0.000029963847, z: 0.00000035348864, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Fin_3_L
       parentName: Boss_Fin_2_L
-      position: {x: -0.22898768, y: -1.9895199e-15, z: -7.8586036e-14}
-      rotation: {x: -0, y: -0, z: -0.0000000018626449, w: 1}
+      position: {x: -0.22898771, y: -5.9685592e-15, z: -7.759127e-14}
+      rotation: {x: 8.326673e-17, y: -1.733337e-33, z: -2.0816682e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Hand_1_L
       parentName: Boss_Arm_3_L
-      position: {x: -1.2381517, y: -9.947598e-15, z: -7.833734e-15}
-      rotation: {x: -0.00024720392, y: -0.0040545855, z: 0.020353623, w: 0.99978465}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      position: {x: -1.2381518, y: -9.947598e-15, z: -7.833733e-15}
+      rotation: {x: -0.00024720415, y: -0.004054587, z: 0.020353628, w: 0.9997846}
+      scale: {x: 1, y: 1, z: 1}
     - name: Boss_Hand_2_L
       parentName: Boss_Hand_1_L
-      position: {x: -1.2123635, y: 3.9790398e-15, z: -6.217249e-16}
-      rotation: {x: -0, y: -0, z: 1.0413714e-10, w: 1}
+      position: {x: -1.2123634, y: 3.9790393e-15, z: -2.4868996e-16}
+      rotation: {x: -4.3368087e-19, y: 1.7347235e-18, z: -1.2112571e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Neck
       parentName: Boss_Spine2
-      position: {x: 5.6920616e-21, y: 1.4092995, z: 0.0000000015494864}
-      rotation: {x: 0.015963444, y: -4.0674315e-24, z: 2.5476423e-22, w: 0.9998726}
+      position: {x: -0, y: 1.4092994, z: 0.0000000015494864}
+      rotation: {x: 0.015963439, y: -1.1647584e-28, z: -9.70141e-28, w: 0.9998726}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_Head
       parentName: Boss_Neck
-      position: {x: 1.9111843e-12, y: 0.6525081, z: 0.12517977}
-      rotation: {x: 0.17278868, y: 2.0730475e-21, z: -1.8821194e-20, w: 0.98495895}
+      position: {x: 1.9111845e-12, y: 0.652508, z: 0.12517975}
+      rotation: {x: 0.17278871, y: 1.3455485e-27, z: 4.748221e-27, w: 0.9849589}
       scale: {x: 1, y: 1, z: 1}
     - name: Boss_HeadTop_End
       parentName: Boss_Head
-      position: {x: 1.897354e-21, y: 2.567143, z: 0.20508227}
-      rotation: {x: -0, y: -0, z: 3.7865319e-28, w: 1}
+      position: {x: -7.589415e-21, y: 2.5671432, z: 0.20508227}
+      rotation: {x: -8.326673e-17, y: -5.04871e-28, z: 4.543839e-28, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Minigun_1
       parentName: Boss_Root
-      position: {x: 0.000007910338, y: 2.5640032e-11, z: -4.2587295}
-      rotation: {x: -0, y: -0.0000005822719, z: -0, w: 1}
+      position: {x: 0.000007910339, y: 2.5640032e-11, z: -4.2587295}
+      rotation: {x: -6.1352316e-15, y: -0.0000005822719, z: 0.000000010536712, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Minigun_2
       parentName: Minigun_1
-      position: {x: 0.00000032607232, y: 1.8915253, z: 3.5385604}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+      position: {x: 0.00000032607227, y: 1.8915254, z: 3.5385602}
+      rotation: {x: -7.888609e-30, y: 0, z: -5.7383284e-24, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Barrel
       parentName: Minigun_1
       position: {x: -0.0000024790238, y: 0.017888268, z: 4.663899}
-      rotation: {x: -0, y: 0.0000005822719, z: -0, w: 1}
+      rotation: {x: -8.768621e-30, y: 0.0000005822719, z: -6.6174465e-24, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5

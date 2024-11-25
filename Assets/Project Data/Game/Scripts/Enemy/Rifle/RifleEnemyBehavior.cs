@@ -16,7 +16,11 @@ namespace Watermelon.SquadShooter
         public override void Attack()
         {
 
+             CanPursue = false;
+
         }
+
+        
 
         public override void OnAnimatorCallback(EnemyCallbackType enemyCallbackType)
         {

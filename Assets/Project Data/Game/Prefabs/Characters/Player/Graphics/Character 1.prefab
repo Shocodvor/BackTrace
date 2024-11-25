@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &390090331940774171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5225820493941374910}
+  m_Layer: 0
+  m_Name: Tesla Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5225820493941374910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390090331940774171}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.42, y: 5.22, z: 2.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128652064810387581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &638347243194350077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6418557729083472386}
+  m_Layer: 0
+  m_Name: Shotgun Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6418557729083472386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638347243194350077}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 4.49, z: 1.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128652064810387581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101969472619705970
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,6 +203,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8886212564391837742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3620088446750951912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7469162675832223421}
+  m_Layer: 0
+  m_Name: Rocket Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7469162675832223421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620088446750951912}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.1305262, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 1.09, y: 4.23, z: 1.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128652064810387581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5642161791788754803
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +353,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128652064810387581}
   m_LocalEulerAnglesHint: {x: -15, y: 0, z: 0}
+--- !u!1 &7618601330110428572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926224612544557207}
+  m_Layer: 0
+  m_Name: Minigun Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926224612544557207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7618601330110428572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.36, y: 4.67, z: 2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128652064810387581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7630643554810384520
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,10 +535,10 @@ MonoBehaviour:
       secondValue: 1.2
   leftHandRig: {fileID: 4717564349005046768}
   rightHandRig: {fileID: 4597044279229347693}
-  minigunHolderTransform: {fileID: 0}
-  shootGunHolderTransform: {fileID: 0}
-  rocketHolderTransform: {fileID: 0}
-  teslaHolderTransform: {fileID: 0}
+  minigunHolderTransform: {fileID: 926224612544557207}
+  shootGunHolderTransform: {fileID: 6418557729083472386}
+  rocketHolderTransform: {fileID: 7469162675832223421}
+  teslaHolderTransform: {fileID: 5225820493941374910}
   mainRig: {fileID: 2432178721322063365}
   leftHandController: {fileID: 3524533464435158221}
   rightHandController: {fileID: 2275046911731308231}
@@ -1399,6 +1523,22 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7542486509285704926}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e02829b4636fb914aa6bb8e6dc98f393,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 926224612544557207}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e02829b4636fb914aa6bb8e6dc98f393,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6418557729083472386}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e02829b4636fb914aa6bb8e6dc98f393,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7469162675832223421}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e02829b4636fb914aa6bb8e6dc98f393,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5225820493941374910}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e02829b4636fb914aa6bb8e6dc98f393,
         type: 3}

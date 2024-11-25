@@ -72,6 +72,8 @@ namespace Watermelon.LevelSystem
         public static Action OnGameplayStart;
         public static Action OnGameplayFinish;
 
+        
+
 
 
         // Pedestal
@@ -80,6 +82,8 @@ namespace Watermelon.LevelSystem
         public static void Initialise(GameSettings levelSettings)
         {
             LevelController.levelSettings = levelSettings;
+
+       
 
             levelSettings.Initialise();
 
@@ -106,7 +110,7 @@ namespace Watermelon.LevelSystem
             // Store current level
             currentLevelData = levelsDatabase.GetLevel(levelSave.WorldIndex, levelSave.LevelIndex);
 
-            Debug.Log(isLevelLoaded);
+           
         }
 
         public static void SpawnPlayer()
@@ -127,17 +131,42 @@ namespace Watermelon.LevelSystem
             characterBehaviour.SetGraphics(characterStage.Prefab, false, false);
             characterBehaviour.SetGun(WeaponsController.GetCurrentWeapon(), false);
 
+             Debug.Log(currentLevelData);
+
         }
 
         public static void LoadCurrentLevel()
         {
-            LoadLevel(levelSave.WorldIndex, levelSave.LevelIndex);
+              if (PlayerPrefs.GetString (key: "Drones") == "Open")  // обучение закончено
+            {
+
+             ActiveRoom.UnloadExitGates ();
+
+            LoadLevel(0, UnityEngine.Random.Range(1,10));
+           //  LoadLevel(0,3);
+           
+             ActiveRoom.ExitPointBehaviour.OnExitActivated();
+
+            }
+
+             else 
+            
+            
+              LoadLevel(0,0);
+
+            
+
         }
+
+        
 
         public static void LoadLevel(int worldIndex, int levelIndex)
         {
-            if (isLevelLoaded)
-                return;
+          //  if (isLevelLoaded)
+              //  return;
+
+
+              
 
             isLevelLoaded = true;
 
@@ -173,7 +202,7 @@ namespace Watermelon.LevelSystem
             if (levelSave.LevelIndex != 0 || levelSave.WorldIndex > 0)
             {
                 characterBehaviour.DisableAgent();
-                LoadPedestal();
+               // LoadPedestal();
             }
         }
 
@@ -363,6 +392,13 @@ namespace Watermelon.LevelSystem
             uiGame.Joystick.EnableControl();
         }
 
+         public static void ResetDetect()
+        {
+
+          //   characterBehaviour.ResetDetector();
+
+        }
+
         private static void LoadPedestal()
         {
             PedestalBehavior = Object.Instantiate(activeObstaclesPreset.PedestalPrefab).GetComponent<PedestalBehavior>();
@@ -487,22 +523,18 @@ namespace Watermelon.LevelSystem
         public static void LoadNextRoom()
 
         {
-
-
-  
-
-
+              
+                     //  if (levelsDatabase.DoesNextLevelExist(levelSave.WorldIndex, levelSave.LevelIndex))
+            
                
-
-
+                    
                     ActiveRoom.ClearEnemies();
 
                     currentRoomIndex = currentRoomIndex + 1;
 
                     RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
 
-                
-
+                      ActiveRoom.SpawnExitPoint(levelSettings.ExitPointPrefab, roomData.ExitPoint);
 
                     // LevelController.CurrentLevelData.GetCoinsReward();
 
@@ -523,11 +555,6 @@ namespace Watermelon.LevelSystem
                 ActiveRoom.SpawnObstacle(activeObstaclesPreset.GetObstacle(obstacles[i].ObstaclesType), obstacles[i]);
             }
 
-                    
-
-
-
-
                     EnemyEntityData[] enemies = roomData.EnemyEntities;
                     for (int i = 0; i < enemies.Length; i++)
                     {
@@ -547,6 +574,8 @@ namespace Watermelon.LevelSystem
                         ActiveRoom.SpawnChest(chest, LevelSettings.GetChestData(chest.ChestType));
                     }
                 }
+
+               
             }
 
 
@@ -554,20 +583,22 @@ namespace Watermelon.LevelSystem
 
                     ActiveRoom.ActivateEnemies();
                     ActiveRoom.InitialiseDrop(roomRewards[1], roomChestRewards[0]);
+                      //  ActiveRoom.Unload();   
 
 
 
-
-                }
-
+                
 
 
+        }
         
 
         public static void ActivateExit()
         {
             if (ActiveRoom.AreAllEnemiesDead())
             {
+
+               
 
                    ActiveRoom.ExitPointBehaviour.OnExitActivated();
 
@@ -590,15 +621,16 @@ namespace Watermelon.LevelSystem
 
                 }
 
-                if (currentRoomIndex == 1)
+                if (currentRoomIndex == 2)
 
                 {
 
 
-                    Debug.Log ("currentRoomIndex == 2");        
+                     
 
 
                     ActiveRoom.ClearEnemies();
+                    ActiveRoom.activeObjects.Clear();
 
                     currentRoomIndex = currentRoomIndex + 1;
 
@@ -680,7 +712,9 @@ namespace Watermelon.LevelSystem
 
 
                     RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
+                    
 
+                 
                     Debug.Log(currentRoomIndex);
 
 
@@ -791,6 +825,10 @@ namespace Watermelon.LevelSystem
 
         public static void OnGameStarted(bool immediately = false)
         {
+
+            Debug.Log (levelSave.LevelIndex);
+
+
             CustomMusicController.ToggleMusic(AudioController.Music.gameMusic, 0.3f, 0.3f);
 
             isGameplayActive = true;
@@ -886,7 +924,7 @@ namespace Watermelon.LevelSystem
             needCharacterSugession = true;
         }
 
-        private static void IncreaseLevelInSave()
+        public static void IncreaseLevelInSave()
         {
             if (levelsDatabase.DoesNextLevelExist(levelSave.WorldIndex, levelSave.LevelIndex))
             {

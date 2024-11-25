@@ -177,6 +177,19 @@ namespace Watermelon
             });
         }
 
+        public static void OnReplayTutorialLevel()
+        {
+            CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
+
+        
+            LevelController.UnloadLevel();
+
+             LevelController.LoadCurrentLevel();
+    
+       
+        }
+
+
         public static void OnRevive()
         {
             UIController.HidePage<UIGameOver>(() =>
@@ -190,13 +203,13 @@ namespace Watermelon
 
         private void Update()
         {
-#if UNITY_EDITOR
-            if (Input.GetKeyDown(KeyCode.N))
-                ActionsMenu.NextLevel();
 
-            if (Input.GetKeyDown(KeyCode.R))
-                ActionsMenu.SkipRoom();
-#endif
+          //  if (Input.GetKeyDown(KeyCode.N))
+              //  ActionsMenu.NextLevel();
+
+          //  if (Input.GetKeyDown(KeyCode.R))
+             //  ActionsMenu.SkipRoom();
+
         }
 
         #region Extensions

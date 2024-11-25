@@ -14,17 +14,17 @@ namespace Watermelon.LevelSystem
         private static LevelData levelData;
         public static LevelData LevelData => levelData;
 
-        private static List<GameObject> activeObjects;
-        private static int activeObjectsCount;
+        public static List<GameObject> activeObjects;
+        public static int activeObjectsCount;
 
         private static List<BaseEnemyBehavior> enemies;
         public static List<BaseEnemyBehavior> Enemies => enemies;
         private static int enemiesCount;
 
-        private static List<AbstractChestBehavior> chests;
+        public static List<AbstractChestBehavior> chests;
         public static List<AbstractChestBehavior> Chests => chests;
 
-        private static int currentLevelIndex;
+        public static int currentLevelIndex;
         public static int CurrentLevelIndex => currentLevelIndex;
 
         private static int currentWorldIndex;
@@ -74,6 +74,8 @@ namespace Watermelon.LevelSystem
             activeObjects.Clear();
             activeObjectsCount = 0;
 
+          
+
             // Unload enemies
             for (int i = 0; i < enemiesCount; i++)
             {
@@ -95,6 +97,22 @@ namespace Watermelon.LevelSystem
             }
         }
 
+        public static void UnloadExitGates ()
+
+        {
+
+             if (exitPointBehaviour != null)
+            {
+                exitPointBehaviour.Unload();
+
+                Object.Destroy(exitPointBehaviour.gameObject);
+
+                exitPointBehaviour = null;
+            } 
+
+
+        }
+
         #region Environment/Obstacles
         public static void SpawnObstacle(LevelObstacle obstacle, ObstacleEntityData obstacleEntityData)
         {
@@ -106,6 +124,8 @@ namespace Watermelon.LevelSystem
 
             activeObjects.Add(obstacleObject);
             activeObjectsCount++;
+
+             //  PlayerPrefs.DeleteAll();
         }
 
         public static void SpawnEnvironment(LevelEnvironment environment, EnvironmentEntityData environmentEntityData)

@@ -18,8 +18,8 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 150
-      visionRange: 45
-      attackDistance: 45
+      visionRange: 60
+      attackDistance: 60
       fleeDistance: 5
       damage:
         firstValue: 20
@@ -46,15 +46,15 @@ MonoBehaviour:
     prefab: {fileID: 2816206852611366199, guid: a88d0da006cc9fa4fbaab4ee2febfc36,
       type: 3}
     stats:
-      hp: 300
-      visionRange: 300
+      hp: 150
+      visionRange: 50
       attackDistance: 7
       fleeDistance: 0
       damage:
-        firstValue: 120
-        secondValue: 150
+        firstValue: 20
+        secondValue: 30
       aimDuration: 0
-      moveSpeed: 60
+      moveSpeed: 40
       patrollingSpeed: 30
       patrollingMutliplier: 0.4
       patrollingIdleDuration: 1.5
@@ -135,18 +135,18 @@ MonoBehaviour:
     stats:
       hp: 200
       visionRange: 150
-      attackDistance: 50
+      attackDistance: 70
       fleeDistance: 10
       damage:
-        firstValue: 4
-        secondValue: 7
+        firstValue: 2
+        secondValue: 4
       aimDuration: 0
-      moveSpeed: 15
-      patrollingSpeed: 10
+      moveSpeed: 0
+      patrollingSpeed: 0
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
       angularSpeed: 400
-      preferedDistanceToPlayer: 3
+      preferedDistanceToPlayer: 5
       level: 1
       eliteHealthMult: 2.5
       eliteDamageMult: 1.1
@@ -162,7 +162,7 @@ MonoBehaviour:
     prefab: {fileID: 7550741562188595895, guid: 52cdd6ec1818aca40985b776c32c36a0,
       type: 3}
     stats:
-      hp: 1976.86
+      hp: 700
       visionRange: 500
       attackDistance: 500
       fleeDistance: 0
@@ -221,12 +221,12 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 300
-      visionRange: 300
+      visionRange: 60
       attackDistance: 45
       fleeDistance: 15
       damage:
         firstValue: 10
-        secondValue: 20
+        secondValue: 15
       aimDuration: 0
       moveSpeed: 80
       patrollingSpeed: 30
@@ -250,15 +250,15 @@ MonoBehaviour:
       type: 3}
     stats:
       hp: 400
-      visionRange: 200
-      attackDistance: 25
+      visionRange: 50
+      attackDistance: 50
       fleeDistance: 0
       damage:
         firstValue: 20
         secondValue: 23
       aimDuration: 0.2
       moveSpeed: 5
-      patrollingSpeed: 6
+      patrollingSpeed: 0
       patrollingMutliplier: 0.5
       patrollingIdleDuration: 2
       angularSpeed: 400

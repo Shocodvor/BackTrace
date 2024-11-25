@@ -102,6 +102,89 @@ MonoBehaviour:
       recommendedCount: 0
     pedestalPrefab: {fileID: 8216573719630268239, guid: 1e70dc176f66adf48bf296751231ea97,
       type: 3}
+  - type: 2
+    obstacles:
+    - prefab: {fileID: 2079970636940507925, guid: fb5579bceec7ee5428b2e8c167b9b847,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 8850487571568800178, guid: 7a69509b476ab22478cd4ba9ef6bc3bb,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 7040122622025098703, guid: 070146f8b28078646977daef3140081b,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 4886506465428382982, guid: 1e9ce078f9001a549944a46bc8af9d5a,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 3275193047788003956, guid: e8d65ba6b5f17f64481e32c58f847871,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 7432301085187984879, guid: f88785f05b90db14b97f9469c93482a2,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 2295481268442410382, guid: 9d7611965f951c04ba08a165e070e3d1,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 2334595651981715048, guid: be29817e2e8e5aa4297d87b307d300fe,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 2770214111528181336, guid: a640d04ce160bf14590afc74ab15543d,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 6106297832844602657, guid: fb1570ad30cb5e84e94bcb310b352256,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 4392632297128704160, guid: 3510dd1404ee6ff4a87185605f4cc9b9,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 7903907526811034716, guid: c280c24d32e8e564a8419136d09cc1de,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 8870180346067256064, guid: 75e8e36f67ef339488ba304b1ff20d40,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5129515741257172432, guid: a1aa0183360e6944e84bd923946fcb1d,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 2965313910403764852, guid: cdfab1fbf713085438caf90d4ca05c87,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 4298376124009274123, guid: 88f7f5fae44908d4f86c3975e39bf546,
+        type: 3}
+      recommendedCount: 0
+    environments:
+    - prefab: {fileID: 7533399733290443937, guid: 053d7e63a392eab458df645f461892d3,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 7533399733290443937, guid: 193ec8ec1b4a80d4da83d6145407e054,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5813789476795365582, guid: a0715834e9cae384494378d39a9173f6,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5813789476795365582, guid: 2b313acbeb9262b47afca7c1fd4d3123,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5813789476795365582, guid: 8f3a7f193919d7f4a8a47560850ceadd,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5813789476795365582, guid: f012c7ff4b877ef458283aeb698aac5c,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5813789476795365582, guid: 96910faaf65ee9040bdab88528e759cd,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5813789476795365582, guid: 4369fc4b37fc0384184008c4eb753241,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 5595796064844234426, guid: 49948c4498e922f4c8f17559f42f7fec,
+        type: 3}
+      recommendedCount: 0
+    - prefab: {fileID: 2527568467874977457, guid: 482484fc5b26df549975a697fc2084fb,
+        type: 3}
+      recommendedCount: 0
+    pedestalPrefab: {fileID: 8216573719630268239, guid: 1e70dc176f66adf48bf296751231ea97,
+      type: 3}
   exitPointPrefab: {fileID: 5884411178410358801, guid: 1a63df826793f4046b07b67c093c2e77,
     type: 3}
   roomEnvPresets:

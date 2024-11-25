@@ -21,12 +21,16 @@ namespace Watermelon.LevelSystem
         public bool IsFinished => saveData.isFinished;
         public int Progress => saveData.progress;
 
+
+
         private TutorialBaseSave saveData;
 
         private LineNavigationArrowCase arrowCase;
 
         private CharacterBehaviour characterBehaviour;
         private BaseEnemyBehavior enemyBehavior;
+
+        private AbstractChestBehavior chestBehavior;
         
         public void Initialise()
         {
@@ -54,7 +58,15 @@ namespace Watermelon.LevelSystem
 
         private void OnEnemyDied(BaseEnemyBehavior enemy)
         {
-            if (enemy == enemyBehavior)
+
+            
+                 chestBehavior = ActiveRoom.chests[0];
+
+                  
+
+                
+
+   if (enemy == enemyBehavior)
             {
                 BaseEnemyBehavior.OnDiedEvent -= OnEnemyDied;
 
@@ -63,14 +75,16 @@ namespace Watermelon.LevelSystem
                     arrowCase.DisableArrow();
                     arrowCase = null;
                 }
-
                 tutorialLabelBehaviour.Disable();
 
-                arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, finishPointTransform.position);
+                arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, (finishPointTransform.position));
 
-                LevelController.ActivateExit();
+                 ActiveRoom.ExitPointBehaviour.OnExitActivated();
+
 
                 LevelController.OnPlayerExitLevelEvent += OnPlayerExitLevel;
+
+                 FinishTutorial();
             }
         }
 
@@ -89,10 +103,15 @@ namespace Watermelon.LevelSystem
 
         public void FinishTutorial()
         {
+
+           
+         
             saveData.isFinished = true;
 
             isInitialised = false;
             SaveLoad.SaveT(saveData, string.Format(ITutorial.SAVE_IDENTIFIER, tutorialId.ToString()));
+            LevelController.IncreaseLevelInSave();
+         
         }
 
         public void Unload()
@@ -120,7 +139,13 @@ namespace Watermelon.LevelSystem
 
         public override void OnLevelLoaded()
         {
-            finishPointTransform = ActiveRoom.ExitPointBehaviour.transform;
+
+         
+
+          //  finishPointTransform = ActiveRoom.  activeObjects [2].transform;
+
+          finishPointTransform = GameObject.FindGameObjectWithTag("PedestalInGame").GetComponent<Transform> ();
+          
 
             if(isInitialised)
                 StartTutorial();
@@ -134,13 +159,34 @@ namespace Watermelon.LevelSystem
 
             enemyBehavior = ActiveRoom.Enemies[0];
 
-            arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, enemyBehavior.transform.position);
-            arrowCase.FixArrowToTarget(enemyBehavior.transform);
+            chestBehavior = ActiveRoom.chests[0];
 
-            tutorialLabelBehaviour = TutorialController.CreateTutorialLabel(TextTranslator.GetText("Открой сундук", "Open the chest"), enemyBehavior.transform, new Vector3(0, 20.0f, 0));
+
+
+            arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, chestBehavior.transform.position);
+            arrowCase.FixArrowToTarget(chestBehavior.transform);
+
+            tutorialLabelBehaviour = TutorialController.CreateTutorialLabel(TextTranslator.GetText("Открой сундук", "Open the chest"), chestBehavior.transform, new Vector3(0, 20.0f, 0));
+
+
+
 
             BaseEnemyBehavior.OnDiedEvent += OnEnemyDied;
+
+          //  AbstractChestBehavior.OnChestOpenedEvent += ChestTutorialOpen;
+
+
         }
+
+        public void ChestTutorialOpen ()
+        {
+
+     
+
+        }
+
+
+
 
         public override void OnLevelUnloaded()
         {
@@ -149,6 +195,8 @@ namespace Watermelon.LevelSystem
 
         public override void OnRoomEntered()
         {
+
+           
 
         }
 

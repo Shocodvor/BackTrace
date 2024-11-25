@@ -295,7 +295,7 @@ namespace Watermelon.SquadShooter
         {
             UIController.HidePage<UICharactersPanel>(() =>
             {
-                UIController.ShowPage<UIMainMenu>();
+              //  UIController.ShowPage<UIMainMenu>();
             });
 
             AudioController.PlaySound(AudioController.Sounds.buttonSound);

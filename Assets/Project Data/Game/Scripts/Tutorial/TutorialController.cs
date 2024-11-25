@@ -21,6 +21,9 @@ namespace Watermelon
 
         public void Initialise()
         {
+
+            Debug.Log ("Initialise");
+
             tutorialController = this;
 
             isTutorialSkipped = TutorialHelper.IsTutorialSkipped();
@@ -34,11 +37,15 @@ namespace Watermelon
 
         private void LateUpdate()
         {
+
+          
             navigationArrowController.LateUpdate();
         }
 
         public static ITutorial GetTutorial(TutorialID tutorialID)
         {
+
+               Debug.Log ("GetTutorial");
             for(int i = 0; i < registeredTutorials.Count; i++)
             {
                 if (registeredTutorials[i].TutorialID == tutorialID)
@@ -58,6 +65,8 @@ namespace Watermelon
 
         public static void ActivateTutorial(ITutorial tutorial)
         {
+
+              Debug.Log ("ActivateTutorial");
             if (!tutorial.IsInitialised)
                 tutorial.Initialise();
 
@@ -67,6 +76,8 @@ namespace Watermelon
 
         public static void RegisterTutorial(ITutorial tutorial)
         {
+
+             Debug.Log ("RegisterTutorial");
             if (registeredTutorials.FindIndex(x => x == tutorial) != -1)
                 return;
 

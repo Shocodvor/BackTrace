@@ -20,8 +20,12 @@ namespace Watermelon.SquadShooter
 
         public static event OnChestOpenedCallback OnChestOpenedEvent;
 
-        protected bool opened;
+        public bool opened;
         protected bool isRewarded;
+
+     
+
+      
 
         public virtual void Init(List<DropData> drop)
         {
@@ -82,7 +86,7 @@ namespace Watermelon.SquadShooter
 
                         AudioController.PlaySound(AudioController.Sounds.chestOpen, 1f);
 
-
+                        
 
 
 
@@ -97,7 +101,7 @@ namespace Watermelon.SquadShooter
                             WeaponCardDropBehaviour card = Drop.DropItem(dropData[i], dropCenter, Vector3.zero, DropFallingStyle.Default, 1, 0.6f).GetComponent<WeaponCardDropBehaviour>();
                             card.SetCardData(dropData[i].cardType);
 
-                              Debug.Log ("WeaponCard");
+                              
                         }
                     }
                     else
@@ -105,13 +109,15 @@ namespace Watermelon.SquadShooter
                         for (int j = 0; j < dropData[i].amount; j++)
                         {
                             
-                             Debug.Log ("dropData");
+                           
                             Drop.DropItem(dropData[i], dropCenter, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Default, 1, 0.6f);
                         }
                     }
                 }
             }
 
+
+            
             OnChestOpenedEvent?.Invoke(this);
         }
     }

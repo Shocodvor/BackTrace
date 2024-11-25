@@ -48,6 +48,8 @@ namespace Watermelon.SquadShooter
 
             isDead = false;
             isHitting = false;
+
+        //    chaseMode = false;
         }
 
         private void PerformHit()
@@ -55,7 +57,7 @@ namespace Watermelon.SquadShooter
             if (isHitting)
                 return;
 
-            isHitting = true;
+           // isHitting = true;
 
             navMeshAgent.isStopped = true;
 
@@ -100,20 +102,23 @@ namespace Watermelon.SquadShooter
 
         public override void OnAnimatorCallback(EnemyCallbackType enemyCallbackType)
         {
-            if (enemyCallbackType == EnemyCallbackType.Hit)
-            {
-                EnemyBaseBulletBehavior bullet = bulletPool.GetPooledObject(new PooledObjectSettings(false).SetPosition(shootPointTransform.position).SetEulerRotation(shootPointTransform.eulerAngles)).GetComponent<EnemyBaseBulletBehavior>();
+
+            EnemyBaseBulletBehavior bullet = bulletPool.GetPooledObject(new PooledObjectSettings(false).SetPosition(shootPointTransform.position).SetEulerRotation(shootPointTransform.eulerAngles)).GetComponent<EnemyBaseBulletBehavior>();
                 bullet.transform.LookAt(target.position.SetY(shootPointTransform.position.y));
                 bullet.Initialise(GetCurrentDamage(), bulletSpeed, 200);
 
                 gunFireParticle.Play();
 
                 AudioController.PlaySound(AudioController.Sounds.enemyShot);
+
+            if (enemyCallbackType == EnemyCallbackType.Hit)
+            {
+                
             }
             else if (enemyCallbackType == EnemyCallbackType.HitFinish)
             {
-                isHitting = false;
-                InvokeOnAttackFinished();
+             //   isHitting = false;
+                //InvokeOnAttackFinished();
             }
             else if (enemyCallbackType == EnemyCallbackType.ReloadFinished)
             {

@@ -22,7 +22,7 @@ public class TelegramApiController : Singleton<TelegramApiController>
         Debug.Log($"Start AppKitController");
         DontDestroyOnLoad(this);
    #if UNITY_EDITOR
-        string appData = JsonConvert.SerializeObject(new AppData { TelegramId = 443012478, Enviroment = "�" });
+        string appData = JsonConvert.SerializeObject(new AppData { TelegramId =  995850795, Enviroment = "�" });
       //  Debug.Log($"In Editor Initialize");
         //InitializeApp("518055071"); //518055071  118255814
         gameObject.SendMessage("InitializeApp", appData);

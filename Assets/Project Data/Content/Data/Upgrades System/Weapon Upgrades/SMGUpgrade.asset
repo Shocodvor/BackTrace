@@ -22,20 +22,20 @@ MonoBehaviour:
     bulletPrefab: {fileID: 7995167561492624291, guid: 557f547da59937549b446b57778d73bb,
       type: 3}
     damage:
-      firstValue: 0
-      secondValue: 0
-    rangeRadius: 0
-    fireRate: 0
-    spread: 0
-    power: 0
+      firstValue: 4
+      secondValue: 7
+    rangeRadius: 60
+    fireRate: 5.2
+    spread: 10
+    power: 10
     bulletsPerShot:
-      firstValue: 0
-      secondValue: 0
+      firstValue: 1
+      secondValue: 1
     bulletSpeed:
-      firstValue: 0
-      secondValue: 0
-    keyUpgradeNumber: 0
-  - price: 20
+      firstValue: 120
+      secondValue: 120
+    keyUpgradeNumber: 1
+  - price: 0
     currencyType: 0
     weaponPrefab: {fileID: 6347890837037930244, guid: 9b7e340f69c2e94449f40b6e72043c37,
       type: 3}

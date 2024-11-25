@@ -54,12 +54,12 @@ namespace Watermelon.SquadShooter
 
         public void StartTutorial()
         {
-            if (isActive)
+           // if (isActive)
                 return;
 
-            isActive = true;
+           // isActive = true;
 
-            UIController.OnPageOpenedEvent += OnMainMenuPageOpened;
+          //  UIController.OnPageOpenedEvent += OnMainMenuPageOpened;
           
         }
 

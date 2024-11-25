@@ -126,12 +126,12 @@ MonoBehaviour:
   deathExplosionRadius: 100
   bulletPrefab: {fileID: 1865428060180637695, guid: 237fecf1150515c4aa65b1ac03f527fb,
     type: 3}
-  bulletSpeed: 70
+  bulletSpeed: 100
   attackDistance: 50
-  hitCooldown: 2
+  hitCooldown: 0
   targetLayer:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 520
   weaponHolderTransform: {fileID: 42454180187431982}
   weaponTransform: {fileID: 4877782376350573700}
   shootPointTransform: {fileID: 4916527043814313088}
@@ -714,6 +714,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 92436423691148081, guid: 9bba7c85dadff164aa5e6038986aacda,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 698996040970792732, guid: 9bba7c85dadff164aa5e6038986aacda,
         type: 3}
       propertyPath: m_Layer
@@ -818,6 +823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938564437620924054, guid: 9bba7c85dadff164aa5e6038986aacda,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7085934945951788984, guid: 9bba7c85dadff164aa5e6038986aacda,
         type: 3}

@@ -31,6 +31,8 @@ namespace Watermelon
 
         public void Initialise()
         {
+
+               Debug.Log ("InitialiseTTTTTTUUUUTORIAL");
             if (isInitialised)
                 return;
 
@@ -47,10 +49,15 @@ namespace Watermelon
         {
             // Force game start
             LevelController.OnGameStarted(immediately: true);
+
+            Debug.Log ("StartTutForceGameStartorial");
         }
 
         public void StartTutorial()
         {
+
+            Debug.Log ("StartTutorial");
+
             // Activate tutorial
             saveData.isActive = true;
             SaveLoad.SaveT(saveData, string.Format(ITutorial.SAVE_IDENTIFIER, TutorialID.ToString()));
@@ -58,52 +65,54 @@ namespace Watermelon
             
             if(!isCompleted)
             {
-                LevelController.EnableManualExitActivation();
+             //   LevelController.EnableManualExitActivation();
 
-                enemyBehavior = ActiveRoom.Enemies[0];
+             //   enemyBehavior = ActiveRoom.Enemies[0];
 
-                arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, enemyBehavior.transform.position);
-                arrowCase.FixArrowToTarget(enemyBehavior.transform);
+            //    arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, enemyBehavior.transform.position);
+             //   arrowCase.FixArrowToTarget(enemyBehavior.transform);
 
-                tutorialLabelBehaviour.Activate(TextTranslator.GetText("УБЕЙ ВРАГА", "KILL THE ENEMY"), enemyBehavior.transform, new Vector3(0, 20.0f, 0));
+              //  tutorialLabelBehaviour.Activate(TextTranslator.GetText("УБЕЙ ВРАГА", "KILL THE ENEMY"), enemyBehavior.transform, new Vector3(0, 20.0f, 0));
 
-                BaseEnemyBehavior.OnDiedEvent += OnEnemyDied;
+              //  BaseEnemyBehavior.OnDiedEvent += OnEnemyDied;
             }
         }
 
         private void OnEnemyDied(BaseEnemyBehavior enemy)
         {
+
+            
             if (enemy == enemyBehavior)
             {
-                BaseEnemyBehavior.OnDiedEvent -= OnEnemyDied;
+              //  BaseEnemyBehavior.OnDiedEvent -= OnEnemyDied;
 
-                tutorialLabelBehaviour.Disable();
+             //   tutorialLabelBehaviour.Disable();
 
                 if (arrowCase != null)
                 {
-                    arrowCase.DisableArrow();
-                    arrowCase = null;
+                //    arrowCase.DisableArrow();
+                 //   arrowCase = null;
                 }
 
-                arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, finishPointTransform.position);
+             //   arrowCase = NavigationArrowController.RegisterLineArrow(characterBehaviour.transform, finishPointTransform.position);
 
-                LevelController.ActivateExit();
+               // LevelController.ActivateExit();
 
-                LevelController.OnPlayerExitLevelEvent += OnPlayerExitLevel;
+              //  LevelController.OnPlayerExitLevelEvent += OnPlayerExitLevel;
             }
         }
 
         private void OnPlayerExitLevel()
         {
-            LevelController.OnPlayerExitLevelEvent -= OnPlayerExitLevel;
+          //  LevelController.OnPlayerExitLevelEvent -= OnPlayerExitLevel;
 
             if (arrowCase != null)
             {
-                arrowCase.DisableArrow();
-                arrowCase = null;
+              //  arrowCase.DisableArrow();
+              //  arrowCase = null;
             }
 
-            isCompleted = true;
+         //   isCompleted = true;
         }
 
         public void FinishTutorial()

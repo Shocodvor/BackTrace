@@ -15,6 +15,8 @@ namespace Watermelon.SquadShooter
         private Coroutine openCoroutine;
         private TweenCase circleTween;
 
+         public delegate void OnChestOpen();
+
         public override void Init(List<DropData> drop)
         {
             base.Init(drop);
@@ -27,6 +29,8 @@ namespace Watermelon.SquadShooter
 
         public override void ChestApproached()
         {
+
+
             if (opened)
                 return;
 
@@ -37,6 +41,8 @@ namespace Watermelon.SquadShooter
             }
 
             openCoroutine = StartCoroutine(ChestOpenCoroutine());
+
+          
         }
 
         private IEnumerator ChestOpenCoroutine()
@@ -48,6 +54,7 @@ namespace Watermelon.SquadShooter
             circleTween.KillActive();
 
             circleTween = fillCircleHolder.DOScale(1f, 0.2f).SetEasing(Ease.Type.CubicOut);
+             
 
             while (timer < openDuration)
             {
@@ -69,6 +76,8 @@ namespace Watermelon.SquadShooter
             });
 
             openCoroutine = null;
+
+              
         }
 
         public override void ChestLeft()

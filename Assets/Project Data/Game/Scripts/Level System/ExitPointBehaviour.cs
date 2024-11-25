@@ -12,6 +12,8 @@ namespace Watermelon.LevelSystem
         public abstract void OnPlayerEnteredExit();
         public abstract void Unload();
 
+      
+
         private void OnTriggerEnter(Collider other)
         {
             if (!isExitActivated)
@@ -21,10 +23,20 @@ namespace Watermelon.LevelSystem
             {
              //   OnPlayerEnteredExit();
 
-                LevelController.LoadNextRoom();
+           
+                ActiveRoom.UnloadExitGates ();
+                  LevelController.LoadNextRoom();
+
+                 
+                 //   RoomData roomData = currentLevelData.Rooms[currentRoomIndex];
+
+                //      ActiveRoom.SpawnExitPoint(levelSettings.ExitPointPrefab, roomData.ExitPoint);
+               //   ActiveRoom.ExitPointBehaviour.OnExitActivated();
 
             }
         }
+
+ 
 
         private void OnTriggerStay(Collider other)
         {

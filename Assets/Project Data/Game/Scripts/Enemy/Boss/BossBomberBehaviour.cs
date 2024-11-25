@@ -18,6 +18,8 @@ namespace Watermelon.SquadShooter
         private readonly int ANIMATOR_SHOOTING_HASH = Animator.StringToHash("Shooting");
         private readonly int ANIMATOR_KICK_HASH = Animator.StringToHash("Kick");
 
+        
+
         [SerializeField] GameObject graphicsObject;
 
         [Header("Fighting")]
@@ -179,8 +181,11 @@ namespace Watermelon.SquadShooter
                 return;
 
             base.TakeDamage(damage, projectilePosition, projectileDirection);
+            
 
-            if (hitAnimationTime < Time.time)
+            if (hitAnimationTime < Time.time*2)
+
+                   DropResources();
                 HitAnimation(Random.Range(0, 2));
         }
 
@@ -210,7 +215,7 @@ namespace Watermelon.SquadShooter
             weaponTransform.DORotate(Random.rotation, 0.8f);
 
             AudioController.PlaySound(AudioController.Sounds.bossScream, 0.6f);
-            DropResources();
+         
 
             LevelController.OnEnemyKilled(this);
 
