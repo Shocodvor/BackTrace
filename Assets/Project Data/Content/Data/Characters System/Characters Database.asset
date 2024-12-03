@@ -33,52 +33,25 @@ MonoBehaviour:
         power: 70
         keyUpgradeNumber: -1
       changeStage: 0
-      stageIndex: -1
+      stageIndex: 3
     - currencyType: 0
-      price: 500
+      price: 0
       stats:
         health: 200
         bulletDamageMultiplier: 1
-        power: 75
+        power: 70
         keyUpgradeNumber: -1
       changeStage: 0
-      stageIndex: -1
+      stageIndex: 4
     - currencyType: 0
-      price: 580
+      price: 0
       stats:
         health: 200
         bulletDamageMultiplier: 1
-        power: 82
-        keyUpgradeNumber: -1
+        power: 70
+        keyUpgradeNumber: 5
       changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 640
-      stats:
-        health: 180
-        bulletDamageMultiplier: 1
-        power: 88
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 760
-      stats:
-        health: 180
-        bulletDamageMultiplier: 1
-        power: 93
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 900
-      stats:
-        health: 180
-        bulletDamageMultiplier: 1
-        power: 100
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
+      stageIndex: 5
   - type: 3
     name: Phill
     nameRU: "\u0424\u0438\u043B"
@@ -92,56 +65,11 @@ MonoBehaviour:
       healthBarOffset: {x: 0, y: 15, z: 0}
     upgrades:
     - currencyType: 0
-      price: 200
+      price: 0
       stats:
         health: 200
         bulletDamageMultiplier: 1
         power: 70
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 1000
-      stats:
-        health: 200
-        bulletDamageMultiplier: 1
-        power: 75
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 580
-      stats:
-        health: 200
-        bulletDamageMultiplier: 1
-        power: 82
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 640
-      stats:
-        health: 180
-        bulletDamageMultiplier: 1
-        power: 88
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 760
-      stats:
-        health: 180
-        bulletDamageMultiplier: 1
-        power: 93
-        keyUpgradeNumber: -1
-      changeStage: 0
-      stageIndex: -1
-    - currencyType: 0
-      price: 900
-      stats:
-        health: 180
-        bulletDamageMultiplier: 1
-        power: 100
         keyUpgradeNumber: -1
       changeStage: 0
       stageIndex: -1

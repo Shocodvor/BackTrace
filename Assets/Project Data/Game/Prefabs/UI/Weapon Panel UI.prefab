@@ -780,7 +780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 81.12231, y: 76.1}
+  m_AnchoredPosition: {x: 53, y: 76.1}
   m_SizeDelta: {x: -248.9554, y: 73.2}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4048937388992317695
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "$Caps \u0434\u043B\u044F \u043E\u043A\u0442\u0440\u044B\u0442\u0438\u044F"
+  m_text: 100  to open
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a4ec9d45acef6b246aa99012ee09dbb6, type: 2}
   m_sharedMaterial: {fileID: -4622812036123745451, guid: a4ec9d45acef6b246aa99012ee09dbb6,
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.2
+  m_fontSize: 34.7
   m_fontSizeBase: 27.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -893,8 +893,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5687c990083e4145b1b99db3abf1b520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _en: ' $Caps TO UNLOCK'
-  _ru: "$Caps \u0434\u043B\u044F \u043E\u043A\u0442\u0440\u044B\u0442\u0438\u044F"
+  _en: 100 Diamonds to open
+  _ru: "100 \u0410\u043B\u043C\u0430\u0437\u043E\u0432 \u0447\u0442\u043E\u0431\u044B
+    \u043E\u0442\u043A\u0440\u044B\u0442\u044C"
 --- !u!223 &616685701278781774
 Canvas:
   m_ObjectHideFlags: 0
@@ -1899,14 +1900,14 @@ RectTransform:
   m_GameObject: {fileID: 5891471084285092662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7351211061832551887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103.2, y: -23.9}
+  m_AnchoredPosition: {x: -112, y: -15}
   m_SizeDelta: {x: 115, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3311530686931630278
@@ -1937,7 +1938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2b1b8056d3a03a64d968ff471582c618, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98a0f8cb4cb7b5640b1aae6d329e4c03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

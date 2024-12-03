@@ -72,6 +72,8 @@ namespace Watermelon.SquadShooter
 
          public CurrencyUIPanelSimple _currencyUIPanelSimple;
 
+         
+
         public void Initialise(Character character, UICharactersPanel charactersPanel)
         {
             this.character = character;
