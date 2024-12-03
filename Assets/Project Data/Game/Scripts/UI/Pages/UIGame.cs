@@ -43,8 +43,9 @@ namespace Watermelon
 
         private void OnTicketUpdated(int value)
         {
-          //  ticketField.text = value.ToString();
+           // ticketField.text = value.ToString();
 
+             ticketField.text = PlayerPrefs.GetInt("Diamonds").ToString();
 
           
         }
@@ -66,7 +67,7 @@ namespace Watermelon
         {
             joystick.Initialise(UIController.MainCanvas);
 
-            AppManager.OnTicketUpdated += OnTicketUpdated;
+          //  AppManager.OnTicketUpdated += OnTicketUpdated;
         }
 
         public override void PlayHideAnimation()
@@ -113,7 +114,10 @@ namespace Watermelon
         {
             coinsText.text = CurrenciesHelper.Format(newAmount);
             capstext.text = LevelController._pointsScore.ToString();
-            ticketField.text = APIManager.ticketsAmount.ToString();
+             ticketField.text =  LevelController._diamonds.ToString();
+
+
+         //  ticketField.text = APIManager.ticketsAmount.ToString();  // для кэпс
 
 
         }
@@ -122,7 +126,8 @@ namespace Watermelon
         {
             
             capstext.text = LevelController._pointsScore.ToString();
-            ticketField.text = APIManager.ticketsAmount.ToString();
+        //    ticketField.text = APIManager.ticketsAmount.ToString();
+              ticketField.text =  LevelController._diamonds.ToString();
 
 
         }

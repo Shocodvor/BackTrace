@@ -406,28 +406,28 @@ namespace Watermelon.SquadShooter
                 return;
 
          
-            AppManager.Instance.PayTicketAndStart((success) =>
-             {
-                 if (success && APIManager.ticketsAmount>0)
-                 {
+            //AppManager.Instance.PayTicketAndStart((success) =>
+          //   {
+              //   if (success && APIManager.ticketsAmount>0)
+               //  {
                   
             
                 
-            
-                     Tween.DelayedCall(0.3f, () =>
-                     {
+            //
+                 //    Tween.DelayedCall(0.3f, () =>
+                 //    {
                       
-                             CharactersController.SelectCharacter(character.Type);
+                     //        CharactersController.SelectCharacter(character.Type);
 
                              SelectCharacter();
 
-                               _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
-                               _currencyUIPanelSimple.Redraw();
+                        //       _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
+                            //   _currencyUIPanelSimple.Redraw();
 
 
-                                  uiGame = UIController.GetPage<UIGame>();
+                             //     uiGame = UIController.GetPage<UIGame>();
                        
-                                  uiGame.UpdateCaps();
+                              //    uiGame.UpdateCaps();
 
                                 
           
@@ -435,9 +435,9 @@ namespace Watermelon.SquadShooter
 
 
 
-                     });
-                 } 
-             });
+                  //   });
+              //   } 
+            // });
 
 
 

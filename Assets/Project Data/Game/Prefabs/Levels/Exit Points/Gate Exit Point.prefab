@@ -436,7 +436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4778429d71fb3d348bf0fa0ee5a1c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinsClaim: {fileID: 8514317329776906613}
   boxCollider: {fileID: 8712997194836731409}
   gatesAnimator: {fileID: 8514317329776906613}
 --- !u!65 &8712997194836731409
@@ -458,7 +457,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15, y: 15, z: 15}
+  m_Size: {x: 50, y: 15, z: 15}
   m_Center: {x: 0, y: 5, z: 2}
 --- !u!114 &3679125297432920394
 MonoBehaviour:

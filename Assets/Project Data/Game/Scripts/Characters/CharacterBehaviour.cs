@@ -3,6 +3,7 @@ using UnityEngine.AI;
 using Watermelon;
 using Watermelon.LevelSystem;
 using Watermelon.Upgrades;
+using GamePush;
 
 
 namespace Watermelon.SquadShooter
@@ -814,7 +815,19 @@ namespace Watermelon.SquadShooter
                healthbarBehaviour.OnHealthChanged();
                 healingParticle.Play();  
 
-                     ActiveRoom.ExitPointBehaviour.OnExitActivated();    
+                     ActiveRoom.ExitPointBehaviour.OnExitActivated();  
+                      PlayerPrefs.SetInt("points",  LevelController._pointsScore);
+
+
+
+                	if (GP_Init.isReady)
+				{
+
+                         GP_Player.Sync();
+                  
+                         GP_Player.Set("score", LevelController._pointsScore);
+
+                }
                      
 
             }
@@ -875,7 +888,9 @@ namespace Watermelon.SquadShooter
 
                 //����� ����� ��� ������� ���� ��� �������� �������� ����������
 
-                LevelController._pointsScore += 10;
+                LevelController._diamonds += 1;
+
+                 PlayerPrefs.SetInt("Diamonds", LevelController._diamonds);
                 
                 
 

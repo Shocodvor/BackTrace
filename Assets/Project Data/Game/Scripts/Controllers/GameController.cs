@@ -131,7 +131,7 @@ namespace Watermelon
 
         private static void ShowMainMenuAfterLevelComplete()
         {
-            CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
+         //   CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
 
             CameraController.EnableCamera(CameraType.Menu);
 
@@ -165,7 +165,7 @@ namespace Watermelon
 
         public static void OnReplayLevel()
         {
-            CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
+          //  CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
 
             CameraController.EnableCamera(CameraType.Menu);
             LevelController.UnloadLevel();
@@ -179,7 +179,7 @@ namespace Watermelon
 
         public static void OnReplayTutorialLevel()
         {
-            CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
+         //   CustomMusicController.ToggleMusic(AudioController.Music.menuMusic, 0.3f, 0.3f);
 
         
             LevelController.UnloadLevel();

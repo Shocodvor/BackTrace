@@ -300,6 +300,14 @@ namespace Watermelon.SquadShooter
 
         protected virtual void OnDeath()
         {
+
+              LevelController._pointsScore +=10;
+
+              UIGame mainUI = UIController.GetPage<UIGame>();
+
+             mainUI.UpdateCaps ();
+
+
             isDead = true;
 
             navMeshAgent.enabled = false;

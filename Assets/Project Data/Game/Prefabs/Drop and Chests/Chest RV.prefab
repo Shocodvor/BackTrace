@@ -881,6 +881,7 @@ MonoBehaviour:
   adHolder: {fileID: 9098109628378902296}
   adCanvas: {fileID: 1244536615191545175}
   CapsClaim: {fileID: 4702367643153942999}
+  ballDeastroy: {fileID: 4440825473145965972}
 --- !u!1001 &5539565450977610398
 PrefabInstance:
   m_ObjectHideFlags: 0

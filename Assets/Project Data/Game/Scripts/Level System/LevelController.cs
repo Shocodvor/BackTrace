@@ -61,6 +61,8 @@ namespace Watermelon.LevelSystem
 
         public static int _pointsScore;
 
+        public static int _diamonds;
+
         // Drop
         private static List<List<DropData>> roomRewards;
         private static List<List<DropData>> roomChestRewards;
@@ -109,6 +111,9 @@ namespace Watermelon.LevelSystem
 
             // Store current level
             currentLevelData = levelsDatabase.GetLevel(levelSave.WorldIndex, levelSave.LevelIndex);
+
+            _pointsScore = PlayerPrefs.GetInt("points");
+            _diamonds = PlayerPrefs.GetInt("Diamonds");
 
            
         }
@@ -823,6 +828,13 @@ namespace Watermelon.LevelSystem
             uiGame.UpdateCoinsText(CurrenciesController.Get(CurrencyType.Coin) + lastLevelMoneyCollected);
         }
 
+    public static void PlayerStartPostion()
+        {
+
+              characterBehaviour.SetPosition(CurrentLevelData.Rooms[currentRoomIndex].SpawnPoint);
+        }
+        
+
         public static void OnGameStarted(bool immediately = false)
         {
 
@@ -951,7 +963,7 @@ namespace Watermelon.LevelSystem
 
             GameController.OnLevelFailded();
              StartGame = false;
-             _pointsScore = 0;
+           //  _pointsScore = 0;
         }
 
         public static string GetCurrentAreaText()

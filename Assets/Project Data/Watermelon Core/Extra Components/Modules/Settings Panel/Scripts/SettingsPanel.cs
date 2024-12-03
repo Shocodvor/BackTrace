@@ -3,6 +3,7 @@
 using UnityEngine;
 using Watermelon.LevelSystem;
 using Watermelon.SquadShooter;
+using GamePush;
 
 namespace Watermelon
 {
@@ -143,36 +144,51 @@ namespace Watermelon
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
         }
 
+        
+        public void LeaderBoardOpen()
+        {
+
+            GP_Player.Sync();
+                  
+            GP_Player.Set("score", LevelController._pointsScore);
+
+            GP_Leaderboard.Open();
+
+
+
+        }
+
+
 
         public void PluseHealth()
         {
 
                   
-            AppManager.Instance.PayTicketAndStart((success) =>
-             {
-                 if (success && APIManager.ticketsAmount>0)
-                 {
+         ////   AppManager.Instance.PayTicketAndStart((success) =>
+          //   {
+            //     if (success && APIManager.ticketsAmount>0)
+            //     {
                
             
-                     Tween.DelayedCall(0.3f, () =>
-                     {
-                characterBehaviour =  GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterBehaviour>();
+              //       Tween.DelayedCall(0.3f, () =>
+               //      {
+             //   characterBehaviour =  GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterBehaviour>();
 
-            characterBehaviour.currentHealth = Mathf.Clamp(characterBehaviour.currentHealth+50, 0, characterBehaviour. MaxHealth);
-            characterBehaviour.healthbarBehaviour.OnHealthChanged();
-            characterBehaviour.healingParticle.Play();
+           // characterBehaviour.currentHealth = Mathf.Clamp(characterBehaviour.currentHealth+50, 0, characterBehaviour. MaxHealth);
+         //   characterBehaviour.healthbarBehaviour.OnHealthChanged();
+         //   characterBehaviour.healingParticle.Play();
 
-                 uiGame = UIController.GetPage<UIGame>();
+          //       uiGame = UIController.GetPage<UIGame>();
 
               
-                 uiGame.UpdateCaps();
+            //     uiGame.UpdateCaps();
           
 
 
                 
-                     });
-                 } 
-             });
+              //       });
+                // } 
+         //    });
           
 
            

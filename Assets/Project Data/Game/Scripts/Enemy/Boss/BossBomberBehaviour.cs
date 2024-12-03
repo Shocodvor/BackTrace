@@ -198,6 +198,12 @@ namespace Watermelon.SquadShooter
 
             isDead = true;
 
+            LevelController._pointsScore +=100;
+
+              UIGame mainUI = UIController.GetPage<UIGame>();
+
+           mainUI.UpdateCaps ();
+
             StateMachine.StopMachine();
 
             navMeshAgent.enabled = false;

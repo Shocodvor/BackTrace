@@ -271,40 +271,40 @@ namespace Watermelon.SquadShooter
         {
 
                 
-            AppManager.Instance.PayTicketAndStart((success) =>
-             {
-               if (success && APIManager.ticketsAmount>0)
-                 {
+           // AppManager.Instance.PayTicketAndStart((success) =>
+           //  {
+           //    if (success && APIManager.ticketsAmount>0)
+            //     {
                
             
-                     Tween.DelayedCall(0.3f, () =>
-                     {
-                       SelectWeapon();
+              //       Tween.DelayedCall(0.3f, () =>
+               //      {
+                 //      SelectWeapon();
 
 
-                Upgrade.UpgradeStage();
+             //   Upgrade.UpgradeStage();
 
-                weaponController.WeaponUpgraded(Data);
+            //    weaponController.WeaponUpgraded(Data);
 
-                AudioController.PlaySound(AudioController.Sounds.buttonSound);
+             //   AudioController.PlaySound(AudioController.Sounds.buttonSound);
 
-                UIGeneralPowerIndicator.UpdateText(true);
+             //   UIGeneralPowerIndicator.UpdateText(true);
 
 
-                _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
-                 _currencyUIPanelSimple.Redraw();
+              //  _currencyUIPanelSimple = GameObject.FindGameObjectWithTag("CurrencyUIPanelSimple").GetComponent<CurrencyUIPanelSimple> ();
+             //    _currencyUIPanelSimple.Redraw();
 
-                    uiGame = UIController.GetPage<UIGame>();
+             //       uiGame = UIController.GetPage<UIGame>();
                        
-                     uiGame.UpdateCaps();
+               //      uiGame.UpdateCaps();
 
 
 
 
                 
-                     });
-                 } 
-             });
+                 //    });
+            //     } 
+           //  });
           
                
        

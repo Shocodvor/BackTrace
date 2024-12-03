@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using webgl;
 using Watermelon.LevelSystem;
+using GamePush;
 
 namespace Watermelon.SquadShooter
 {
@@ -16,6 +17,8 @@ namespace Watermelon.SquadShooter
         [SerializeField] Canvas adCanvas;
 
         public Animator CapsClaim;
+
+        public GameObject ballDeastroy;
 
 
             
@@ -67,30 +70,34 @@ namespace Watermelon.SquadShooter
         private void OnButtonClick()
         {
 
-            AppManager.Instance.PayTicketAndStart((success) =>
-             {
-                 if (success)
-                 {
-                    opened = true;
-            
-                     animatorRef.SetTrigger(OPEN_HASH);
-                    rvAnimator.SetBool(IS_OPEN_HASH, false);
-            
-                     Tween.DelayedCall(0.3f, () =>
-                     {
-                       DropResources();
+           DropResources();
                        particle.SetActive(false);
+
+                        uiGame = UIController.GetPage<UIGame>();
+                       
+              uiGame.UpdateCaps();
+
+          //  AppManager.Instance.PayTicketAndStart((success) =>
+           //  {
+              //   if (success)
+              //   {
+                 //   opened = true;
+            
+                  //   animatorRef.SetTrigger(OPEN_HASH);
+                 //   rvAnimator.SetBool(IS_OPEN_HASH, false);
+            
+                  //   Tween.DelayedCall(0.3f, () =>
+                  //   {
+                      
 
 
                        
                     //   Vibration.Vibrate(AudioController.Vibrations.shortVibration);
-                     });
-                 } 
-             });
+                //     });
+              //   } 
+           //  });
 
-               uiGame = UIController.GetPage<UIGame>();
-                       
-              uiGame.UpdateCaps();
+              
        
     }
 
@@ -100,6 +107,9 @@ namespace Watermelon.SquadShooter
       
         PlayerPrefs.SetString ("Drones", "Open");
 
+
+       
+
          for (int i = 0; i < dropData.Count; i++)
                 {
 
@@ -107,7 +117,7 @@ namespace Watermelon.SquadShooter
                     {
 
 
-                         for (int k =0; k<10;k++){   
+                         for (int k =0; k<5;k++){   
                         int health = 100;
                           Drop.DropItem(new DropData() { dropType = DropableItemType.Heal, amount = health }, transform.position, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Coin, 0.3f, -1);
 
@@ -116,18 +126,25 @@ namespace Watermelon.SquadShooter
                     }
 
                 }
+
+                   Destroy (ballDeastroy,1);
       //   CapsClaim. Play ("1");
 
     }
 
 
+
+
     public void LoadRamdomWorld ()
 
     {
+      //   GP_Ads.ShowRewarded("COINS", OnRewardedReward, OnRewardedStart, OnRewardedClose);
+
+      
 
           CurrenciesController.Add(CurrencyType.Coin, LevelController.lastLevelMoneyCollected);
-            AppManager.OnGameOver.Invoke(LevelController._pointsScore);
-            LevelController._pointsScore = 0;
+        //    AppManager.OnGameOver.Invoke(LevelController._pointsScore);
+          //  LevelController._pointsScore = 0;
          //   LevelController.lastLevelMoneyCollected = 0;
 
                  uiGame = UIController.GetPage<UIGame>();
@@ -149,6 +166,8 @@ namespace Watermelon.SquadShooter
                             GameController.OnReplayTutorialLevel();
                              // LevelController.OnGameplayStart?.Invoke();
                               LevelController.OnGameStarted();
+
+                                GP_Ads.ShowFullscreen();
                       //  }
                          
                             
@@ -158,6 +177,24 @@ namespace Watermelon.SquadShooter
 
 
     }
+
+       private void OnRewardedClose(bool success) => Debug.Log("ON REWARDED: CLOSE");
+
+       private void OnRewardedStart() => Debug.Log("ON REWARDED: START");
+
+       
+private void OnRewardedReward(string value)
+
+
+{
+
+ 
+       
+        
+
+     
+          
+}
 
 
 }

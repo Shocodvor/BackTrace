@@ -41,8 +41,8 @@ namespace Watermelon
         public void Redraw()
         {
             text.text = CurrenciesController.Get(CurrencyType.Coin).ToString();
-            ticketstext.text = APIManager.ticketsAmount.ToString();
-            
+         //   ticketstext.text = APIManager.ticketsAmount.ToString();  //для кэпсов
+              ticketstext.text =  LevelController._diamonds.ToString();
            
 
 

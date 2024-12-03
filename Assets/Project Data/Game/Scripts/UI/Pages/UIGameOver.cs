@@ -19,6 +19,8 @@ namespace Watermelon
         [Space]
         [SerializeField] TMP_Text tapToContinueText;
 
+           [Space]
+        [SerializeField] GameObject PlayerTramsform;
 
         public CoinsView _coins;
 
@@ -28,6 +30,7 @@ namespace Watermelon
         {
             reviveButton.onClick.AddListener(Revive);
             continueButton.onClick.AddListener(Replay);
+            
           
 
 
@@ -81,11 +84,14 @@ namespace Watermelon
         #region Buttons
         public void Replay()
         {
+
+
             AudioController.PlaySound(AudioController.Sounds.buttonSound);
             LevelController.OnGameplayFinish?.Invoke();
             GameController.OnReplayLevel();
-
-
+          
+            LevelController.PlayerStartPostion();
+          
 
 
 
@@ -97,17 +103,17 @@ namespace Watermelon
 
            // Ads.Instance.ShowReward(GameController.OnRevive);
             //
-             AppManager.Instance.PayTicketAndStart((success) =>
-             {
-                 if (success && APIManager.ticketsAmount>0)
-                 {
-                     GameController.OnRevive();
-                 }
-                 else
-                 {
-                     GameController.OnReplayLevel();
-                 }
-             });
+           //  AppManager.Instance.PayTicketAndStart((success) =>
+           //  {
+             //    if (success && APIManager.ticketsAmount>0)
+             //    {
+                  //   GameController.OnRevive();
+               //  }
+               //  else
+               //  {
+                    GameController.OnReplayLevel();
+               //  }
+            // });
 
 
 

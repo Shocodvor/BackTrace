@@ -57,9 +57,9 @@ namespace Watermelon.SquadShooter
                     {
 
 
-                         for (int k =0; k<10;k++){   
+                         for (int k =0; k<5;k++){   
                         int health = 100;
-                          Drop.DropItem(new DropData() { dropType = DropableItemType.Heal, amount = health }, transform.position, Vector3.zero.SetY(Random.Range(0f, 360f)), DropFallingStyle.Coin, 0.3f, -1);
+                          Drop.DropItem(new DropData() { dropType = DropableItemType.Heal, amount = health }, transform.position, Vector3.zero.SetY(Random.Range(0f, 1f)), DropFallingStyle.Coin, 0.3f, -1);
 
                          }
 
